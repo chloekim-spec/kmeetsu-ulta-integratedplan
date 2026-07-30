@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- unlisted proposal: keep it out of search engines -->
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-Beauty Week presented by KMEETSU — Annual Integrated Program FY2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --magenta:#E8186D;
+  --orange:#F5741D;
+  --plum:#2D1B2E;
+  --plum-soft:#4A2F4C;
+  --cream:#FDF8F3;
+  --cream-2:#F6EFE7;
+  --line:#E4D9CD;
+  --ask:#FFC72C;
+  --ask-soft:#FFF3CE;
+  --ask-line:#E5A400;
+  --ink:#1A1A1A;
+  --mute:#6F675C;          /* was #8C8477 — 3.6:1 on cream, below WCAG AA */
+  --mute-2:#8C8477;        /* decorative only, never for reading text */
+  --grey-node:#C9BFB4;
+  --label-w:250px;
+  --cols:15;
+  /* Non-uniform month columns: the four moment months (idx 4,7,10,13) breathe.
+     Order = Oct26 Nov26 Dec26 Jan27 [FEB] Mar Apr [MAY] Jun Jul [AUG] Sep Oct [NOV] Dec27 */
+  --months:1fr 1fr 1fr 1fr 2.2fr 1fr 1fr 2.2fr 1fr 1fr 2.2fr 1fr 1fr 2.2fr 1fr;
+  --grid:var(--label-w) var(--months);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Inter',-apple-system,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
+}
+.wrap{max-width:1680px;margin:0 auto;padding:0 32px 120px}
+
+/* ============ COVER ============ */
+.cover{
+  min-height:100vh;display:grid;grid-template-columns:1fr 380px;background:#fff;
+  border-bottom:3px solid var(--plum);
+}
+@media(max-width:1000px){.cover{grid-template-columns:1fr;min-height:auto}}
+.cv-main{padding:64px 56px 44px;display:flex;flex-direction:column}
+.cv-side{background:var(--cream-2);padding:64px 34px 44px;display:flex;flex-direction:column;justify-content:flex-end}
+@media(max-width:1000px){.cv-side{padding:34px}}
+.cv-lock{display:flex;align-items:center;gap:26px}
+.cv-lock img.ulta{height:58px;width:auto}
+.cv-lock img.kmu{height:40px;width:auto}
+.cv-x{font-size:26px;color:var(--magenta);font-weight:300;line-height:1}
+.cv-mid{flex:1;display:flex;flex-direction:column;justify-content:center;padding:44px 0}
+.cv-rule{height:5px;width:min(760px,88%);background:linear-gradient(90deg,var(--orange),var(--magenta));border-radius:3px}
+.cv-h1{
+  font-size:clamp(52px,7.4vw,116px);font-weight:900;letter-spacing:-.045em;line-height:.92;
+  color:#1A1A1A;margin:20px 0 0;text-transform:uppercase;
+}
+.cv-present{font-size:clamp(17px,1.9vw,27px);font-weight:300;font-style:italic;color:var(--magenta);letter-spacing:-.01em;margin-top:6px}
+.cv-present b{font-style:normal;font-weight:800;color:#1A1A1A}
+.cv-sub{font-size:clamp(15px,1.5vw,21px);color:#1A1A1A;font-weight:400;margin-top:34px;letter-spacing:-.01em}
+.cv-sub em{color:var(--magenta);font-style:normal;padding:0 4px}
+.cv-foot{margin-top:auto}
+.cv-tag{font-size:13px;font-weight:800;letter-spacing:.24em;color:var(--orange);text-transform:uppercase}
+.cv-line{height:1px;background:#1A1A1A;margin:16px 0 12px;width:min(920px,94%)}
+.cv-pg{font-size:13px;font-weight:900;color:#1A1A1A;letter-spacing:.06em}
+.cv-mlist{border-top:1px solid #DED2C2;padding-top:20px}
+.cv-mtitle{font-size:10.5px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-bottom:16px}
+.cv-m{display:flex;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid #E6DCCE}
+.cv-m:last-child{border-bottom:none}
+.cv-m b{font-size:15px;font-weight:900;color:var(--plum);min-width:38px;letter-spacing:-.01em}
+.cv-m span{font-size:11.5px;color:var(--plum-soft);font-weight:600;line-height:1.3}
+.cv-m i{width:8px;height:8px;border-radius:50%;flex:0 0 auto}
+.cv-m i.f{background:linear-gradient(135deg,var(--magenta),var(--orange))}
+.cv-m i.l{background:var(--orange)}
+.cv-scroll{margin-top:26px;font-size:10.5px;font-weight:800;letter-spacing:.16em;color:var(--mute);text-transform:uppercase}
+
+/* ============ HEADER ============ */
+header{
+  padding:52px 0 30px;
+  border-bottom:3px solid var(--plum);
+  margin-bottom:0;
+}
+.brandrow{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.eyebrow{
+  font-size:10.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--magenta);margin-bottom:14px;
+}
+h1{
+  font-size:clamp(30px,4vw,54px);font-weight:900;letter-spacing:-.03em;line-height:1.02;
+  color:var(--plum);
+}
+h1 .thin{font-weight:300;font-style:italic;color:var(--magenta)}
+.sub{margin-top:14px;font-size:15px;color:var(--plum-soft);max-width:760px;font-weight:400}
+
+/* ============ CONTROL BAR ============ */
+/* lives inside the timeline section — sticks only while that section is on screen */
+.controls{
+  position:sticky;top:0;z-index:60;
+  background:rgba(253,248,243,.94);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  padding:12px 0;margin:0 0 16px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.ctl-label{font-size:10.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-right:4px}
+.btn{
+  font-family:inherit;font-size:11.5px;font-weight:600;letter-spacing:.03em;
+  padding:8px 15px;border-radius:100px;border:1.5px solid var(--line);
+  background:#fff;color:var(--plum-soft);cursor:pointer;transition:all .18s;
+}
+.btn:hover{border-color:var(--plum);color:var(--plum)}
+.btn.on{background:var(--plum);border-color:var(--plum);color:#fff}
+.btn.ask.on{background:var(--ask);border-color:var(--ask-line);color:var(--plum)}
+.spacer{flex:1}
+.legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:10.5px;color:var(--mute);font-weight:500}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+
+/* ============ SECTION ============ */
+section{padding-top:64px}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
+.sec-num{
+  font-size:11px;font-weight:900;letter-spacing:.1em;color:#fff;background:var(--plum);
+  padding:4px 9px;border-radius:4px;
+}
+h2{font-size:24px;font-weight:800;letter-spacing:-.02em;color:var(--plum)}
+.sec-sub{font-size:13.5px;color:var(--mute);margin-bottom:28px;max-width:900px;line-height:1.65}
+@media(max-width:1100px){}
+
+/* ============ HOW TO READ (legend) ============ */
+.howto{
+  border:1px solid var(--line);border-radius:10px;background:#fff;padding:14px 18px;margin-bottom:14px;
+  display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;
+}
+.howto .ht{font-size:10.5px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--plum);margin-right:4px}
+.hl{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--plum-soft);font-weight:500}
+.hl .sw{flex:0 0 auto;display:inline-block}
+.sw-hero{width:16px;height:16px;border-radius:50%;background:linear-gradient(135deg,var(--magenta),var(--orange));border:2px solid #fff;box-shadow:0 0 0 3px rgba(232,24,109,.18)}
+.sw-pipe{width:30px;height:4px;border-radius:2px;opacity:.85;
+  background-image:linear-gradient(90deg,rgba(255,209,169,0) 0%,rgba(255,196,140,.95) 40%,rgba(255,228,196,.98) 50%,rgba(255,196,140,.95) 60%,rgba(255,209,169,0) 100%),
+                   linear-gradient(90deg,#E8186D,#F5741D);
+  background-size:160px 100%,100% 100%;background-repeat:repeat-x,no-repeat;
+  animation:flow 1.8s linear infinite}
+.sw-rib{width:30px;height:14px;border-radius:2px;background:linear-gradient(180deg,rgba(232,24,109,.28),rgba(245,116,29,.06));clip-path:polygon(0 68%,22% 68%,32% 8%,42% 68%,68% 68%,78% 8%,88% 68%,100% 68%,100% 100%,0 100%)}
+.sw-ring{width:12px;height:12px;border-radius:50%;background:var(--magenta);border:2px solid #fff;box-shadow:0 0 0 2px var(--ask-line)}
+.sw-kb{width:22px;height:14px;border-radius:3px;background:#FFE9F2;border:1px solid #F5B8D2}
+
+/* ============ TIMELINE GRID ============ */
+.tl-wrap{position:relative}
+.tl-fade{
+  position:absolute;top:0;right:0;bottom:8px;width:64px;pointer-events:none;border-radius:0 12px 12px 0;
+  background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.96));opacity:1;transition:opacity .25s;
+}
+.tl-hint{
+  position:absolute;right:14px;bottom:18px;pointer-events:none;transition:opacity .25s;
+  background:var(--plum);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.12em;
+  padding:6px 12px;border-radius:100px;box-shadow:0 6px 16px rgba(45,27,46,.28);
+}
+.tl-wrap.scrolled .tl-fade,.tl-wrap.scrolled .tl-hint,
+.tl-wrap.nofit .tl-fade,.tl-wrap.nofit .tl-hint{opacity:0}
+/* horizontal only — no height cap, so the timeline shows in full with no inner scroll */
+.tl-scroll{overflow-x:auto;padding-bottom:8px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.tl-scroll::-webkit-scrollbar{height:10px}
+.tl-scroll::-webkit-scrollbar-thumb{background:#D6CABA;border-radius:10px}
+.tl-scroll::-webkit-scrollbar-track{background:#F4EDE4;border-radius:10px}
+.tl{min-width:1560px}
+.row{display:grid;grid-template-columns:var(--grid);align-items:stretch}
+.cell{border-right:1px solid #F0E9E0;position:relative;min-height:1px}
+.cell:last-child{border-right:none}
+
+/* axis */
+.axis{background:#fff;box-shadow:0 1px 0 var(--line);z-index:40}
+.axis.foot{box-shadow:0 -1px 0 var(--line);border-top:1px solid var(--line)}
+.axis.foot .ax-y{color:var(--mute)}
+.axis .lbl{padding:10px 16px;font-size:10.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);display:flex;align-items:center}
+.axis .cell{padding:9px 4px;text-align:center}
+.ax-m{font-size:12px;font-weight:800;color:var(--plum);letter-spacing:.03em}
+.ax-y{font-size:10px;font-weight:700;color:var(--magenta);letter-spacing:.1em}
+.ax-fw{font-size:10px;color:var(--mute);font-weight:600;margin-top:2px}
+.yearbar{display:grid;grid-template-columns:var(--grid);background:var(--plum)}
+.yearbar div{padding:6px 0;text-align:center;font-size:10.5px;font-weight:900;letter-spacing:.2em;color:rgba(255,255,255,.5);text-transform:uppercase}
+.yearbar div.y-on{color:#fff;background:rgba(232,24,109,.35)}
+
+/* lane label */
+.lbl{
+  padding:0 16px;display:flex;align-items:center;gap:8px;
+  border-right:2px solid var(--plum);background:#fff;position:sticky;left:0;z-index:20;
+}
+.lbl-txt{font-size:11.5px;font-weight:600;color:var(--plum);line-height:1.25}
+.lbl-sm{font-size:10.5px;color:var(--mute);font-weight:500}
+
+/* tentpole band */
+.band{background:var(--cream-2)}
+.band .lbl{background:var(--cream-2)}
+.band .cell{padding:6px 3px;display:flex;flex-direction:column;gap:3px;justify-content:center}
+.tp{
+  font-size:10px;font-weight:700;line-height:1.2;color:#6B5E4F;
+  background:#fff;border:1px solid #E0D5C6;border-radius:3px;padding:3px 4px;text-align:center;
+}
+.tp.tbc{opacity:.6;border-style:dashed}
+.tp.kb{background:#FFE9F2;border-color:#F5B8D2;color:#A81254}
+
+/* moments band */
+.mband{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mband .lbl{background:#fff}
+.mband-inner{grid-column:2 / -1;display:grid;grid-template-columns:var(--months);padding:12px 0;position:relative}
+.mchip{
+  border-radius:8px;padding:9px 10px;text-align:center;cursor:pointer;transition:.2s;
+  display:flex;flex-direction:column;justify-content:center;min-height:62px;
+}
+.mchip:hover{transform:scale(1.03)}
+.mchip.full{background:linear-gradient(135deg,var(--magenta),var(--orange));color:#fff;box-shadow:0 6px 18px rgba(232,24,109,.32)}
+.mchip.light{background:var(--orange);color:#fff;box-shadow:0 5px 14px rgba(245,116,29,.25)}
+.mchip.zero{background:var(--cream-2);border:1.5px dashed #D0C4B4;color:#7A6E5E}
+.mchip .t1{font-size:10px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;opacity:.85}
+.mchip .t2{font-size:12.5px;font-weight:800;line-height:1.15;margin-top:3px;letter-spacing:-.01em}
+.mchip .t3{font-size:10px;font-weight:600;opacity:.8;margin-top:3px}
+
+/* ---- collapsed group lanes (default view) ---- */
+.glane{border-bottom:1px solid #EDE5DA;transition:opacity .25s}
+.glane .lbl{padding:0 16px;min-height:76px}
+.glane .g-n{font-size:13px;font-weight:800;color:var(--plum);letter-spacing:-.01em}
+.glane .g-s{font-size:10.5px;color:var(--mute);font-weight:600;margin-top:2px}
+.glane .cell{display:flex;align-items:center;justify-content:center}
+.clus{
+  border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  color:#fff;border:3px solid #fff;position:relative;z-index:5;
+  transition:transform .28s cubic-bezier(.34,1.56,.64,1);
+}
+.clus svg{width:56%;height:56%;display:block}
+.clus.zero svg{width:60%;height:60%}
+.clus:hover,.clus:focus-visible{transform:scale(1.12);outline:none;transition-delay:0ms!important}
+.clus.full{background:linear-gradient(135deg,var(--magenta),var(--orange));box-shadow:0 4px 14px rgba(232,24,109,.3)}
+.clus.light{background:var(--orange);box-shadow:0 3px 11px rgba(245,116,29,.26)}
+.clus.zero{background:var(--grey-node);color:#fff;box-shadow:none}
+.clus.askc{box-shadow:0 0 0 3px var(--ask),0 4px 14px rgba(232,24,109,.24)}
+.tl.arm .clus{transform:scale(0)}
+.tl.arm.lit .clus{transform:scale(1);transition-delay:var(--d,0ms)}
+/* collapsed <-> expanded */
+.tl .grouprow,.tl .track{display:none}
+.tl.expanded .glane{display:none}
+.tl.expanded .grouprow{display:grid}
+.tl.expanded .track{display:grid}
+
+.ribbon{background:#fff;border-bottom:1px solid var(--line)}
+.ribbon .lbl{background:#fff;min-height:66px}
+.rb{grid-column:2 / -1;height:66px;position:relative}
+.rb svg{width:100%;height:100%;display:block}
+
+/* group header */
+.grouprow{display:grid;grid-template-columns:var(--grid);background:var(--plum);margin-top:0}
+.grouprow .g-lbl{padding:7px 16px;font-size:10.5px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#fff;position:sticky;left:0;background:var(--plum);z-index:20;display:flex;align-items:center;gap:8px}
+.grouprow .g-lbl .gcount{background:rgba(255,255,255,.18);padding:1px 6px;border-radius:20px;font-size:10px;letter-spacing:.06em}
+.grouprow .g-rest{grid-column:2 / -1}
+
+/* track row */
+.track{border-bottom:1px solid #F2ECE3;transition:opacity .25s}
+.track:hover{background:#FEFCFA}
+.track .lbl{padding:11px 16px;min-height:46px}
+.track.dim{opacity:.16}
+/* Ulta-support tracks are flagged across the whole row, not by a bullet */
+.track[data-ask]:not([data-ask=""]) .lbl{
+  background:linear-gradient(90deg,var(--ask-soft) 0%,#FFFDF6 62%,#fff 100%);
+  box-shadow:inset 4px 0 0 var(--ask);
+}
+.track[data-ask]:not([data-ask=""]) .lbl-txt{color:#6B4A00}
+.askdot{
+  width:11px;height:11px;border-radius:2px;flex:0 0 auto;background:var(--ask);
+  border:1px solid var(--ask-line);margin-top:2px;
+}
+.askdot.none{background:transparent;border:1px solid var(--line)}
+/* one unbroken bar per lane, flowing left to right — the always-on engine */
+.glane,.track{position:relative}
+.flow{
+  position:absolute;left:var(--label-w);right:0;top:50%;height:4px;
+  transform:translateY(-50%);z-index:1;border-radius:2px;pointer-events:none;
+  opacity:.85;
+  /* fixed brand gradient underneath, bright streaks travelling over it */
+  background-image:
+    linear-gradient(90deg,rgba(255,209,169,0) 0%,rgba(255,196,140,.95) 40%,rgba(255,228,196,.98) 50%,rgba(255,196,140,.95) 60%,rgba(255,209,169,0) 100%),
+    linear-gradient(90deg,#E8186D,#F5741D);
+  background-size:160px 100%, 100% 100%;
+  background-repeat:repeat-x, no-repeat;
+  animation:flow 1.8s linear infinite;
+}
+.track .flow{height:3px;opacity:.7}
+/* the streak layer shifts exactly one tile, so the loop is seamless */
+@keyframes flow{to{background-position:160px 0, 0 0}}
+@media(prefers-reduced-motion:reduce){.flow{animation:none}}
+.track .cell{display:flex;align-items:center;justify-content:center}
+/* Nodes are visible by default. The reveal animation is an enhancement layered on top,
+   so a scripting failure can never leave the timeline blank. */
+.node{
+  width:13px;height:13px;border-radius:50%;cursor:pointer;position:relative;z-index:5;
+  transition:transform .34s cubic-bezier(.34,1.56,.64,1);border:2px solid #fff;
+}
+.tl.arm .node{transform:scale(0)}
+.tl.arm.lit .node{transform:scale(1);transition-delay:var(--d,0ms)}
+.node:hover,.node:focus-visible{transform:scale(1.75)!important;z-index:30;outline:none;transition-delay:0ms!important}
+.node.full{background:var(--magenta);box-shadow:0 0 0 4px rgba(232,24,109,.16)}
+.node.light{background:var(--orange);box-shadow:0 0 0 4px rgba(245,116,29,.15)}
+.node.reg{background:var(--grey-node);width:9px;height:9px}
+.node.hero{width:18px;height:18px;background:linear-gradient(135deg,var(--magenta),var(--orange));box-shadow:0 0 0 5px rgba(232,24,109,.18)}
+.node.askn::after{
+  content:'';position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--ask-line);
+}
+/* halo on the four signature-event nodes — draws the eye to the moments */
+.node.hero::before{
+  content:'';position:absolute;inset:0;border-radius:50%;background:var(--magenta);
+  opacity:.35;animation:pl 2.8s ease-out infinite;z-index:-1;
+}
+@keyframes pl{0%{transform:scale(1);opacity:.35}70%{transform:scale(3.2);opacity:0}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.node.hero::before{animation:none}.node{transition:none}}
+
+/* ============ SCENARIO MATRIX ============ */
+/* overflow:clip instead of hidden — hidden would make this a scroll container
+   and silently break position:sticky on .mx-head */
+.matrix{border:1px solid var(--line);border-radius:12px;overflow:clip;background:#fff}
+.mx-row{display:grid;grid-template-columns:220px repeat(4,1fr);border-bottom:1px solid #F2ECE3}
+.mx-row:last-child{border-bottom:none}
+.mx-head{background:var(--plum);position:sticky;top:0;z-index:30}
+.mx-head div{padding:12px 14px;font-size:10.5px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#fff;border-right:1px solid rgba(255,255,255,.12)}
+.mx-head div:first-child{color:rgba(255,255,255,.55)}
+.mx-head .h-full{background:rgba(232,24,109,.4)}
+.mx-head .h-light{background:rgba(245,116,29,.35)}
+.mx-head .h-reg{background:rgba(255,255,255,.07);color:rgba(255,255,255,.7)}
+.mx-cell.reg{color:var(--mute);font-size:11px}
+.mx-row>div{padding:10px 14px;font-size:11.5px;border-right:1px solid #F2ECE3;display:flex;align-items:center;gap:7px}
+.mx-row>div:last-child{border-right:none}
+.mx-item{font-weight:600;color:var(--plum);background:#FDFBF8}
+.mx-cell{color:var(--plum-soft);line-height:1.35}
+.mx-cell.off{color:#CFC5B8;font-size:13px}
+.mx-grp{background:var(--cream-2);grid-template-columns:1fr}
+.mx-grp div{font-size:10.5px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--plum-soft);padding:7px 14px}
+
+/* ============ INSIDE A K-BEAUTY WEEK — the visual board ============ */
+.vtabs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:26px}
+@media(max-width:1000px){.vtabs{grid-template-columns:repeat(2,1fr)}}
+.vtab{
+  text-align:left;font-family:inherit;cursor:pointer;background:#fff;
+  border:2px solid var(--line);border-radius:12px;padding:16px 18px 15px;transition:all .18s;
+  position:relative;overflow:hidden;
+}
+.vtab::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grey-node)}
+.vtab.full::before{background:linear-gradient(90deg,var(--magenta),var(--orange))}
+.vtab.light::before{background:var(--orange)}
+.vtab:hover{border-color:var(--plum-soft)}
+.vtab.on{border-color:var(--plum);background:var(--plum)}
+.vtab.on .vt-tag{color:var(--ask)}
+.vtab.on .vt-nm,.vtab.on .vt-ct b{color:#fff}
+.vtab.on .vt-wh,.vtab.on .vt-ct{color:rgba(255,255,255,.6)}
+.vt-tag{font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
+.vt-nm{font-size:16px;font-weight:800;color:var(--plum);letter-spacing:-.02em;margin:5px 0 2px;line-height:1.15}
+.vt-wh{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+
+.vlead{
+  display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);
+  border-left:5px solid var(--magenta);border-radius:10px;padding:15px 20px;margin-bottom:24px;
+}
+.vlead b{font-size:15px;font-weight:800;color:var(--plum);letter-spacing:-.01em}
+.vlead span{font-size:12.5px;color:var(--plum-soft)}
+
+.zone{margin-bottom:30px}
+.zhead{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;padding-bottom:9px;border-bottom:2px solid var(--plum)}
+.zhead h3{font-size:15px;font-weight:900;letter-spacing:.02em;color:var(--plum)}
+.zhead em{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);font-style:normal}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.card.u{border-color:var(--ask-line);box-shadow:inset 0 3px 0 var(--ask)}
+.cimg{
+  aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#F6EFE7 0 9px,#EFE6DA 9px 18px);
+  display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;
+}
+.cimg img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+.cimg.tall{background:var(--cream-2)}
+.cimg.tall img{object-fit:contain;padding:6px}
+.cimg .ph{font-size:10px;font-weight:900;letter-spacing:.12em;color:var(--magenta);background:#fff;border:1px solid var(--magenta);padding:3px 8px;border-radius:3px}
+.cbody{padding:11px 13px 13px;display:flex;flex-direction:column;flex:1}
+.creq{
+  margin-top:auto;padding-top:10px;border-top:1px dashed var(--ask-line);
+  font-size:11.5px;color:#6B4A00;line-height:1.45;
+}
+.creq b{
+  display:block;font-size:9.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ask-line);margin-bottom:4px;
+}
+.ctx{padding-bottom:10px}
+.cnm{font-size:12.5px;font-weight:800;color:var(--plum);line-height:1.25}
+.uflag{font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#6B4A00;background:var(--ask);border-radius:3px;padding:1px 5px;margin-left:5px;vertical-align:1px}
+.ctx{font-size:11.5px;color:var(--plum-soft);line-height:1.45;margin-top:4px}
+.vsum{background:var(--plum);color:#fff;border-radius:14px;padding:26px 30px;margin-top:10px}
+.vs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.vs-grid{grid-template-columns:1fr}}
+.vs-col{border-left:3px solid var(--ask);padding-left:16px}
+.vs-h{font-size:16px;font-weight:800;color:#fff;letter-spacing:-.01em}
+.vs-s{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:2px}
+.vs-l{list-style:none;margin:12px 0 0;padding:0}
+.vs-l li{font-size:12.5px;color:rgba(255,255,255,.88);line-height:1.4;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.vs-l li:last-child{border-bottom:none}
+
+/* ============ THE ASK — the focal section ============ */
+.focal{
+  background:var(--plum);border-radius:20px;padding:48px 44px 44px;
+  margin:0 -20px;color:#fff;
+}
+@media(max-width:900px){.focal{margin:0;padding:32px 22px}}
+.focal .sec-num{background:var(--ask);color:var(--plum)}
+.focal h2{color:#fff;font-size:32px}
+.focal .sec-sub{color:rgba(255,255,255,.72);font-size:14px;max-width:820px}
+.urgent{
+  display:flex;align-items:center;gap:14px;background:rgba(255,199,44,.14);
+  border:1px solid rgba(255,199,44,.42);border-left:5px solid var(--ask);
+  border-radius:10px;padding:15px 20px;margin:0 0 28px;
+}
+.urgent b{color:var(--ask);font-size:15px;font-weight:900;letter-spacing:-.01em}
+.urgent span{color:rgba(255,255,255,.8);font-size:12.5px}
+.asks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:1000px){.asks{grid-template-columns:1fr}}
+.askcard{border:1px solid rgba(255,255,255,.16);border-radius:14px;background:rgba(255,255,255,.055);overflow:hidden}
+.askcard.invest{border-color:var(--ask);background:rgba(255,199,44,.09)}
+.ac-head{padding:20px 22px 17px;border-bottom:1px solid rgba(255,255,255,.14)}
+.ac-kind{font-size:10.5px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--ask);margin:0 0 6px}
+.ac-title{font-size:21px;font-weight:800;color:#fff;letter-spacing:-.02em}
+.ac-cost{
+  font-size:10.5px;font-weight:700;margin-top:10px;display:inline-block;padding:4px 10px;border-radius:20px;
+  background:var(--ask);color:#5C4300;
+}
+.ac-cost.free{background:rgba(255,255,255,.16);color:#fff}
+.ac-list{padding:4px 0}
+.ac-item{padding:12px 22px;border-bottom:1px solid rgba(255,255,255,.09);display:flex;gap:14px;align-items:center}
+.ac-item:last-child{border-bottom:none}
+.ac-due{
+  flex:0 0 60px;text-align:center;border-radius:6px;padding:5px 2px;height:fit-content;
+  background:rgba(255,255,255,.11);
+}
+.ac-due b{display:block;font-size:12px;font-weight:900;color:#fff;letter-spacing:-.01em}
+.ac-due span{display:block;font-size:9.5px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.05em}
+.ac-item.crit .ac-due{background:var(--ask)}
+.ac-item.crit .ac-due b{color:#4A3400}
+.ac-item.crit .ac-due span{color:rgba(74,52,0,.7)}
+.ac-name{font-size:13px;font-weight:700;color:#fff;line-height:1.3}
+
+/* ============ PROGRAM AT A GLANCE (PDF p.02 language) ============ */
+.gl-owner{display:flex;gap:20px;align-items:center;margin-bottom:12px;font-size:11.5px;font-weight:700;color:var(--plum)}
+.gl-owner i{display:inline-block;width:12px;height:12px;margin-right:7px;vertical-align:-1px}
+.gl-owner i.u{background:var(--orange)}
+.gl-owner i.g{background:var(--magenta)}
+.gl-wrap{border-top:4px solid;border-image:linear-gradient(90deg,var(--orange),var(--magenta)) 1;overflow-x:auto}
+.gl{width:100%;min-width:1080px;border-collapse:collapse;font-size:12px}
+.gl th,.gl td{text-align:left;padding:8px 12px;vertical-align:middle}
+.gl thead tr.t1 th{background:#111;color:#fff;font-size:11.5px;font-weight:800;letter-spacing:.01em}
+.gl thead tr.t2 th{color:#fff;font-size:13px;font-weight:900;letter-spacing:.01em}
+.gl thead tr.t2 th.c-cat{background:var(--orange)}
+.gl thead tr.t2 th.c-item{background:#F0862A}
+.gl thead tr.t2 th.c-own{background:#EC6E3C;text-align:center;font-size:11.5px}
+.gl thead tr.t2 th.c-w{background:#E8552F}
+.gl thead tr.t2 th.c-l{background:#E63368}
+.gl thead tr.t2 th.c-r{background:var(--magenta)}
+.gl td.cat{background:#EFEBE6;font-size:14px;font-weight:800;color:#1A1A1A;border-right:2px solid #fff}
+.gl td.item{font-weight:700;color:#1A1A1A}
+.gl td.item.ulta{color:var(--orange)}
+.gl td.own{text-align:center;width:52px}
+.gl td.own i{display:inline-block;width:12px;height:12px}
+.gl td.own i.u{background:var(--orange)}
+.gl td.own i.g{background:var(--magenta)}
+.gl td.v{color:#333}
+.gl tbody tr{border-bottom:1px solid #F1EBE3}
+.gl tbody tr.grp-end{border-bottom:1.5px solid var(--orange)}
+.gl td.v.w{background:rgba(245,116,29,.045)}
+.gl td.v.l{background:rgba(232,24,109,.035)}
+.gl td.v.r{background:rgba(45,27,46,.028)}
+.gl td.v:empty::after{content:'';display:block}
+
+.vfold{margin-top:10px}
+.vfold summary{
+  cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;
+  font-size:12.5px;font-weight:800;letter-spacing:.05em;color:var(--plum-soft);
+  padding:14px 18px;border:1px solid var(--line);border-radius:10px;background:#fff;
+}
+.vfold summary::-webkit-details-marker{display:none}
+.vfold summary:hover{border-color:var(--plum)}
+.vfold summary .chev{font-size:15px;color:var(--magenta);transition:transform .2s}
+.vfold[open] summary .chev{transform:rotate(90deg)}
+.vfold[open] summary{border-bottom-left-radius:0;border-bottom-right-radius:0}
+.vfold .vsum{margin-top:0;border-top-left-radius:0;border-top-right-radius:0}
+
+/* ============ APPENDIX ============ */
+.appx{margin-top:56px;border-top:1px solid var(--line);padding-top:26px}
+.appx summary{
+  cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;
+  font-size:12.5px;font-weight:800;letter-spacing:.05em;color:var(--plum-soft);
+  padding:14px 18px;border:1px solid var(--line);border-radius:10px;background:#fff;
+}
+.appx summary::-webkit-details-marker{display:none}
+.appx summary:hover{border-color:var(--plum)}
+.appx summary .chev{font-size:15px;color:var(--magenta);transition:transform .2s}
+.appx[open] summary .chev{transform:rotate(90deg)}
+.appx summary .apx-tag{font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--mute);padding:3px 8px;border-radius:3px}
+.appx .inner{padding-top:20px}
+
+/* ============ DRAWER — one-glance brief ============ */
+.dw-scope{
+  display:flex;align-items:center;gap:10px;padding:11px 34px;background:var(--cream-2);
+  border-bottom:1px solid var(--line);font-size:11.5px;color:var(--plum-soft);font-weight:600;
+}
+.dw-scope b{font-size:10.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--plum-soft);padding:3px 8px;border-radius:4px}
+.dw-back{
+  margin-left:auto;font-family:inherit;font-size:11px;font-weight:800;letter-spacing:.04em;cursor:pointer;
+  background:#fff;border:1px solid var(--magenta);color:var(--magenta);border-radius:100px;padding:5px 13px;
+}
+.dw-back:hover{background:var(--magenta);color:#fff}
+.li{display:flex;gap:13px;padding:13px 0;border-bottom:1px solid #EFE8DF;align-items:flex-start}
+.li:last-child{border-bottom:none}
+.li .th{width:72px;height:72px;border-radius:6px;flex:0 0 auto;object-fit:cover;object-position:center 20%;border:1px solid var(--line);background:var(--cream-2)}
+.li .th.tall{object-fit:contain;padding:3px}
+.li .nm{font-size:13px;font-weight:800;color:var(--plum);line-height:1.25}
+.li .tx{font-size:12px;color:var(--plum-soft);line-height:1.45;margin-top:3px}
+.li .fl{font-size:9.5px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#6B4A00;background:var(--ask-soft);border:1px solid var(--ask-line);border-radius:3px;padding:1px 6px;margin-left:6px;white-space:nowrap}
+.dw-hero{
+  height:250px;background:repeating-linear-gradient(45deg,#F6EFE7 0 11px,#EFE6DA 11px 22px);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;
+  border-bottom:1px solid var(--line);position:relative;overflow:hidden;
+}
+.dw-hero.small{height:210px}
+.dw-hero img{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.dw-hero.tall{background:var(--cream-2)}
+.dw-hero.tall img{object-fit:contain;padding:10px}
+.dw-hero.has img{display:block}
+.dw-hero.has .pid,.dw-hero.has .pspec{display:none}
+.dw-hero .pid{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--magenta);background:#fff;padding:4px 10px;border-radius:4px;border:1px solid var(--magenta)}
+.dw-hero .pspec{font-size:11px;color:#7E7160;margin-top:10px;line-height:1.5;max-width:440px;font-weight:500}
+.dw-idea{
+  font-size:20px;font-weight:800;letter-spacing:-.02em;line-height:1.3;color:var(--plum);
+  padding:26px 34px 20px;
+}
+.dw-idea b{
+  background:linear-gradient(180deg,transparent 62%,rgba(255,199,44,.55) 62%);
+  padding:0 2px;
+}
+.dw-facts{
+  display:flex;align-items:center;gap:14px;padding:13px 34px;background:#fff;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.dw-fw{
+  font-size:12px;font-weight:900;letter-spacing:.06em;color:var(--plum);
+  background:var(--cream-2);border:1px solid var(--line);border-radius:5px;padding:5px 11px;
+}
+.dw-dates{font-size:12.5px;font-weight:600;color:var(--plum-soft);letter-spacing:.01em}
+.dw-sec{font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:26px 0 12px}
+.jr{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid #EFE8DF;align-items:flex-start}
+.jr:last-child{border-bottom:none}
+.jr .st{
+  flex:0 0 84px;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;
+  color:#fff;background:var(--plum-soft);border-radius:4px;padding:5px 6px;text-align:center;line-height:1.2;
+}
+.jr .tx{font-size:13px;color:var(--plum);line-height:1.5;padding-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{
+  font-size:11.5px;font-weight:600;padding:6px 11px;border-radius:100px;
+  border:1px solid var(--line);background:#fff;color:var(--plum-soft);
+}
+.chip.u{background:var(--ask-soft);border-color:var(--ask-line);color:#6B4A00;font-weight:700}
+.dw-why{
+  margin-top:26px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--magenta);
+  border-radius:8px;padding:16px 18px;font-size:12.5px;color:var(--plum-soft);line-height:1.65;
+}
+.dw-why b{color:var(--plum);display:block;font-size:10.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
+.dw-src{margin-top:20px;font-size:10.5px;color:var(--mute);line-height:1.6;font-style:italic}
+
+/* ============ DRAWER ============ */
+.scrim{position:fixed;inset:0;background:rgba(26,16,24,.5);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:.28s;z-index:200}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{
+  position:fixed;top:0;right:0;bottom:0;width:min(680px,94vw);background:var(--cream);
+  z-index:201;transform:translateX(102%);transition:transform .34s cubic-bezier(.4,0,.2,1);
+  overflow-y:auto;box-shadow:-16px 0 50px rgba(0,0,0,.2);
+}
+.drawer.on{transform:translateX(0)}
+.dw-head{padding:30px 34px 24px;color:#fff;position:relative}
+.dw-head.full{background:linear-gradient(135deg,var(--magenta),var(--orange))}
+.dw-head.light{background:var(--orange)}
+.dw-head.zero{background:var(--plum-soft)}
+.dw-close{position:absolute;top:22px;right:26px;background:rgba(255,255,255,.2);border:none;color:#fff;width:32px;height:32px;border-radius:50%;font-size:17px;cursor:pointer;font-family:inherit}
+.dw-tag{font-size:10.5px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.dw-title{font-size:29px;font-weight:900;letter-spacing:-.03em;line-height:1.05;margin:8px 0 8px}
+.dw-when{font-size:12px;font-weight:600;opacity:.92}
+.dw-body{padding:26px 34px 60px}
+
+/* ============ HOVER PREVIEW ============ */
+.preview{
+  position:fixed;z-index:300;width:300px;background:#fff;border:1.5px solid var(--plum);
+  border-radius:12px;box-shadow:0 20px 46px rgba(45,27,46,.26);overflow:hidden;
+  opacity:0;pointer-events:none;transition:opacity .14s;
+}
+.preview.on{opacity:1}
+.pv-img{
+  height:172px;background:repeating-linear-gradient(45deg,#F6EFE7 0 9px,#EFE6DA 9px 18px);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px;
+  border-bottom:1.5px solid var(--line);position:relative;overflow:hidden;
+}
+.pv-img img{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.pv-img.tall{background:var(--cream-2)}
+.pv-img.tall img{object-fit:contain;padding:6px}
+.pv-img.has img{display:block}
+.pv-img.has .pv-id,.pv-img.has .pv-spec{display:none}
+.pv-id{font-size:10.5px;font-weight:900;letter-spacing:.16em;color:var(--magenta);background:#fff;padding:3px 8px;border-radius:3px;border:1px solid var(--magenta)}
+.pv-spec{font-size:10.5px;color:#7E7160;margin-top:9px;line-height:1.45;font-weight:500}
+.pv-body{padding:13px 15px}
+.pv-tk{font-size:10px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;color:var(--mute)}
+.pv-nm{font-size:14px;font-weight:800;color:var(--plum);margin:3px 0 5px;line-height:1.2}
+.pv-de{font-size:11.5px;color:var(--plum-soft);line-height:1.5}
+.pv-ask{margin-top:9px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#7A5400;background:var(--ask-soft);border:1px solid var(--ask-line);padding:4px 8px;border-radius:3px;display:inline-block}
+
+/* ============ FOOTER ============ */
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.note{font-size:11px;color:var(--mute);margin-top:12px;line-height:1.6;font-style:italic}
+
+/* ============ PRINT / PDF ============ */
+@page{size:A3 landscape;margin:11mm}
+@media print{
+  :root{--label-w:200px}
+  body{background:#fff}
+  .wrap{max-width:none;padding:0}
+  .controls,.tl-fade,.tl-hint,.preview,.scrim,.drawer,
+  .print-only{display:block}
+  /* nothing may stay sticky or clipped when paginating */
+  .axis,.mx-head,.lbl,.g-lbl,.grouprow .g-lbl{position:static!important}
+  .tl-scroll{overflow:visible!important;border:none}
+  .tl{min-width:0!important;width:100%}
+  .matrix{overflow:visible!important}
+  /* nodes must never depend on script state in print */
+  .tl.arm .node,.tl.arm .clus{transform:scale(1)!important}
+  .node.hero::before{animation:none;opacity:.2}
+  .track.dim{opacity:1!important}
+  section{padding-top:20px;break-inside:avoid}
+  header{padding-top:0}
+  .askcard,
+  h2{break-after:avoid}
+  
+  .asks{grid-template-columns:repeat(3,1fr)}
+  a[href]::after{content:''}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<div class="cover">
+  <div class="cv-main">
+    <div class="cv-lock">
+      <img class="ulta" src="images/UB_Logo_Orange_NoBkgd.png" alt="Ulta Beauty">
+      <span class="cv-x">&times;</span>
+      <img class="kmu" src="images/KMEETSU_Logo.png" alt="KMEETSU">
+    </div>
+
+    <div class="cv-mid">
+      <div class="cv-rule"></div>
+      <h1 class="cv-h1">K-Beauty Week</h1>
+      <div class="cv-present">presented by <b>KMEETSU</b></div>
+      <div class="cv-sub">Ulta Beauty <em>&times;</em> Goodai Global USA &nbsp;&middot;&nbsp; Integrated Marketing Plan</div>
+    </div>
+
+    <div class="cv-foot">
+      <div class="cv-tag">Proposal / FY2027</div>
+      <div class="cv-line"></div>
+      <div class="cv-pg">01</div>
+    </div>
+  </div>
+
+  <div class="cv-side">
+    <div class="cv-mlist">
+      <div class="cv-mtitle">Four moments a year</div>
+      <div class="cv-m"><i class="f"></i><b>FEB</b><span>K-Beauty Week · Spring<br>Full swing</span></div>
+      <div class="cv-m"><i class="l"></i><b>MAY</b><span>Day of K-Beauty · Offline<br>Light</span></div>
+      <div class="cv-m"><i class="f"></i><b>AUG</b><span>K-Beauty Week · Fall<br>Full swing</span></div>
+      <div class="cv-m"><i class="l"></i><b>NOV</b><span>Day of K-Beauty · Online<br>Light</span></div>
+      <div class="cv-scroll">Scroll for the program &darr;</div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<header>
+  <div class="brandrow">
+    <div>
+      <div class="eyebrow">Goodai Global USA &nbsp;×&nbsp; Ulta Beauty &nbsp;·&nbsp; Confidential</div>
+      <h1>K-Beauty Week<br><span class="thin">presented by</span> KMEETSU</h1>
+      <p class="sub">One integrated program, not seven separate tracks. Four national moments a year where every lever fires at once — plus an always-on engine in between. This is the operating picture, and the specific commitment we are asking Ulta to make.</p>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 01 PROGRAM AT A GLANCE ============ -->
+<section>
+  <div class="sec-head"><span class="sec-num">01</span><h2>Program at a Glance</h2></div>
+  <p class="sec-sub">Twenty-four initiatives, one program. Fifteen need Ulta; nine we own and fund outright. Each runs at one of three intensities depending on where we are in the year.</p>
+  <div class="gl-owner">
+    <span><i class="u"></i>Ulta Beauty</span>
+    <span><i class="g"></i>Goodai Global USA</span>
+  </div>
+  <div class="gl-wrap"><table class="gl" id="gl"></table></div>
+</section>
+
+<!-- ============ 02 TIMELINE ============ -->
+<section>
+  <div class="sec-head"><span class="sec-num">02</span><h2>Annual Operating Timeline</h2></div>
+  <p class="sec-sub">Two full-swing weeks anchored to Ulta&rsquo;s own fiscal calendar, two single-date activations — one offline-led, one online-led — and one quarter of self-funded warm-up before any of it. Read it vertically: thin dashed lines are the always-on engine, and at each moment every line converges into a single column. That simultaneity is the program.</p>
+
+  <div class="controls">
+    <span class="ctl-label">Density</span>
+    <button class="btn on" id="b-grp">6 groups</button>
+    <button class="btn" id="b-exp">All 24 initiatives</button>
+    <span class="ctl-label" style="margin-left:14px">Filter</span>
+    <button class="btn on" id="b-all">Everything</button>
+    <button class="btn ask" id="b-ask">Ulta support only</button>
+    <div class="spacer"></div>
+    <span class="legend"><span>Click a circle for that lane &nbsp;·&nbsp; click the moment banner for the whole week</span></span>
+  </div>
+
+  <div class="howto">
+    <span class="ht">How to read</span>
+    <span class="hl"><i class="sw sw-hero"></i>Icon = lane · circle size = how many fire</span>
+    <span class="hl"><i class="sw sw-pipe"></i>Flowing bar = always-on, running every week</span>
+    <span class="hl"><i class="sw sw-rib"></i>Ribbon = activity across the year, never zero</span>
+    <span class="hl"><i class="sw sw-ring"></i>Yellow = Ulta support required</span>
+    <span class="hl"><i class="sw sw-kb"></i>Ulta K-Beauty tentpole</span>
+  </div>
+
+  <div class="tl-wrap" id="tlwrap">
+    <div class="tl-scroll" id="tlscroll">
+      <div class="tl" id="tl"></div>
+    </div>
+    <div class="tl-fade"></div>
+    <div class="tl-hint">SCROLL &rarr;</div>
+  </div>
+  <p class="note">Ulta FY2027 tentpoles are projected from the FY2026 fiscal grid and require Ulta confirmation. Month placement follows Ulta fiscal weeks, so Fall Haul (FW34) sits in September and the Big Holiday Sale (FW44) in November.</p>
+</section>
+
+<!-- ============ 03 INSIDE A K-BEAUTY WEEK ============ -->
+<section>
+  <div class="sec-head"><span class="sec-num">03</span><h2>Inside a K-Beauty Week</h2></div>
+  <p class="sec-sub">The timeline above shows <em>when</em>. This shows <em>what</em> — everything a K-Beauty Week puts in market, as pictures, with nothing to click. Each group ends with the part Ulta provides.</p>
+  <div class="vtabs" id="vtabs"></div>
+  <div class="vlead" id="vlead"></div>
+  <div id="board"></div>
+  <details class="vfold">
+    <summary><span class="chev">&rsaquo;</span>What we need from Ulta for this version</summary>
+    <div class="vsum" id="vsum"></div>
+  </details>
+</section>
+
+<!-- ============ 04 THE ASK (focal) ============ -->
+<details class="appx askfold"><summary><span class="chev">&rsaquo;</span><span class="apx-tag">Section 04</span> What we are asking Ulta for — 15 items with decision dates</summary>
+  <div class="focal" style="margin-top:18px">
+    <div class="sec-head"><span class="sec-num">04</span><h2>What We Are Asking Ulta For</h2></div>
+    <p class="sec-sub">Goodai Global USA runs all 24 initiatives and funds 9 of them outright. What we cannot build alone is the Ulta half — the shelf, the page, the flyer and the handle. Fifteen asks, split by what each actually costs Ulta, each with the date it has to be decided.</p>
+
+    <div class="urgent">
+      <b>3 decisions due by October 2026</b>
+      <span>February 2027 is not a February decision. Endcap, mailer space and kit SKU set-up all close 4–6 months ahead — miss them and the first moment moves to August.</span>
+    </div>
+
+    <div class="asks" id="asks"></div>
+    <p class="note" style="color:rgba(255,255,255,.5)">Lead times are planning assumptions based on standard retail cycles and require confirmation from the relevant Ulta teams. Dates shown unlock Moment 01 (February 2027); the August cycle repeats the same sequence six months later.</p>
+  </div>
+</details>
+
+<!-- ============ APPENDIX ============ -->
+<details class="appx">
+  <summary><span class="chev">&rsaquo;</span><span class="apx-tag">Appendix</span> Appendix detail — how the two light moments differ (offline May vs online Nov)</summary>
+  <div class="inner">
+    <p class="sec-sub">Program at a Glance shows one combined LIGHT column. In practice the two light moments are built differently — May is offline-led, November is online-led. This is that split.</p>
+    <div class="matrix" id="mx"></div>
+  </div>
+</details>
+
+<footer>
+  <span>Goodai Global USA Inc. — KMEETSU Integrated Retail Program · Prepared for Ulta Beauty leadership review</span>
+  <span>Draft v1 · Budget figures intentionally excluded from this version</span>
+</footer>
+</div>
+
+<!-- preview -->
+<div class="preview" id="pv">
+  <div class="pv-img" id="pv-imgbox"><img id="pv-img" alt=""><div class="pv-id" id="pv-id">IMG-00</div><div class="pv-spec" id="pv-spec"></div></div>
+  <div class="pv-body">
+    <div class="pv-tk" id="pv-tk"></div>
+    <div class="pv-nm" id="pv-nm"></div>
+    <div class="pv-de" id="pv-de"></div>
+    <div id="pv-askwrap"></div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer">
+  <div class="dw-head" id="dw-head">
+    <button class="dw-close" id="dw-close">&times;</button>
+    <div class="dw-tag" id="dw-tag"></div>
+    <div class="dw-title" id="dw-title"></div>
+    <div class="dw-when" id="dw-when"></div>
+  </div>
+  <div class="dw-scope" id="dw-scope" style="display:none"></div>
+  <div class="dw-hero" id="dw-hero"><img id="dw-himg" alt=""><div class="pid" id="dw-hid"></div><div class="pspec" id="dw-hspec"></div></div>
+  <div class="dw-idea" id="dw-idea"></div>
+  <div class="dw-facts" id="dw-facts"></div>
+  <div class="dw-body"><div id="dw-list"></div></div>
+</aside>
+
+<script>
+/* ══════════════════════════════════════════════════
+   DATA
+   ══════════════════════════════════════════════════ */
+const MONTHS = [
+ {m:'OCT',y:'2026',fw:'FW36–39'},{m:'NOV',y:'2026',fw:'FW40–44'},{m:'DEC',y:'2026',fw:'FW45–48'},
+ {m:'JAN',y:'2027',fw:'FW49–52'},{m:'FEB',y:'2027',fw:'FW1–4'},{m:'MAR',y:'2027',fw:'FW5–9'},
+ {m:'APR',y:'2027',fw:'FW10–13'},{m:'MAY',y:'2027',fw:'FW14–17'},{m:'JUN',y:'2027',fw:'FW18–22'},
+ {m:'JUL',y:'2027',fw:'FW23–26'},{m:'AUG',y:'2027',fw:'FW27–30'},{m:'SEP',y:'2027',fw:'FW31–35'},
+ {m:'OCT',y:'2027',fw:'FW36–39'},{m:'NOV',y:'2027',fw:'FW40–44'},{m:'DEC',y:'2027',fw:'FW45–48'}
+];
+const NC = MONTHS.length;
+
+/* Ulta tentpole band — index:[{t,cls}] */
+/* Month placement verified against the Ulta FY2026 fiscal grid:
+   Fall Haul = FW34 (Sep 20) → September, not October.
+   Big Holiday Beauty Sale = FW44 (Nov 29) → November, not December. */
+const TENT = {
+ 0:[{t:'Early BF: K-Beauty',c:'kb'}],
+ 1:[{t:'Black Friday',c:''},{t:'Cyber Monday',c:''},{t:'Big Holiday Sale',c:''}],
+ 2:[{t:'Holiday / Gift',c:''}],
+ 3:[{t:'Love Your Skin',c:'tbc'}],
+ 4:[{t:'FY2027 begins',c:'tbc'},{t:'Spring reset',c:'tbc'}],
+ 5:[{t:'Spring Haul',c:'tbc'}],
+ 6:[{t:'Spring Haul',c:'tbc'}],
+ 7:[{t:'Gorgeous Hair',c:'tbc'}],
+ 8:[{t:'Beauty Steals',c:'tbc'}],
+ 9:[{t:'Summer Beauty',c:'tbc'}],
+ 10:[{t:'Back To School',c:'tbc'},{t:'BOGO 40% OFF',c:'tbc'}],
+ 11:[{t:'21 Days of Beauty',c:'tbc'},{t:'Fall Haul',c:'tbc'}],
+ 12:[{t:'Early BF: K-Beauty',c:'kb tbc'}],
+ 13:[{t:'Black Friday',c:'tbc'},{t:'Cyber Monday',c:'tbc'},{t:'Big Holiday Sale',c:'tbc'}],
+ 14:[{t:'Holiday / Gift',c:'tbc'}]
+};
+
+/* Four moments + phase 0 */
+const EV = {
+ P0:{key:'P0',col:[0,2],node:null,kind:'zero',tag:'Phase 0 · Solo',
+   name:'Warm-Up (No Ulta Investment)',when:'OCT – DEC 2026',fw:'FW36–48 · FY2026',
+   lead:'Q4 2026 is the control group. Every always-on track is already funded and running: promotion, sponsored product, GWP sampling, the quarterly Edu-Box, the national field team, paid social, ambassadors and paid creator collaborations. What is deliberately absent is every yellow item on this page — no secondary placement, no mailer, no dotcom feature, no co-post. The gap between this quarter and February 2027 is exactly the value of Ulta’s participation.'},
+ E1:{key:'E1',col:[4,4],node:4,kind:'full',tag:'Moment 01 · Full Swing',
+   name:'K-Beauty Week · Spring',when:'FEB 2027',fw:'FW1–2 · Jan 31 – Feb 13, 2027',
+   lead:'Twenty-three of the twenty-four initiatives fire inside a two-week window. This is the moment Ulta sees what an integrated K-Beauty franchise looks like at full scale — a national one-day headline offer, a dedicated endcap, a front-page mailer, a homepage tile, a promo table takeover with the field team on the floor, and a co-posted social wave running underneath it all. Timing note: FW1–2 carries lower traffic than a tentpole week, so the success measure for Moment 01 is new-to-brand customers, category trial and content volume — not absolute sales. We propose agreeing that KPI set before launch.'},
+ E2:{key:'E2',col:[7,7],node:7,kind:'light',tag:'Moment 02 · Light',
+   name:'Day of K-Beauty · Offline',when:'MAY 2027',fw:'FW16 · May 16 – 22, 2027',
+   lead:'A single national marketing date executed as a rolling in-store wave rather than a literal one-day national event — a field organisation cannot cover the full door count in 24 hours. The mechanic is deliberately simple: a flash promotion plus a free K-Beauty sample kit as the hero offer, supported by an etagere takeover. Field team headcount is concentrated on top-traffic doors only, so the same investment produces a visible crowd rather than a thin national spread. Placed post-Mother’s Day, ahead of Memorial Day, at the start of the summer skincare cycle.'},
+ E3:{key:'E3',col:[10,10],node:10,kind:'full',tag:'Moment 03 · Full Swing',
+   name:'K-Beauty Week · Fall',when:'AUG 2027',fw:'FW27–28 · Aug 1 – 14, 2027',
+   lead:'Same architecture as Moment 01, executed on the highest-traffic K-Beauty consumer moment of the year. Back To School delivers the Gen-Z footfall that K-Beauty converts best, and by August the February readout gives us real Ulta data to optimise SKU mix, offer depth and door selection. One caution to plan around: BTS is the most contested and highest-rate print and media window of the year, so the mailer and UB Media line items will carry a higher gross cost here than in February.'},
+ E4:{key:'E4',col:[13,13],node:13,kind:'light',tag:'Moment 04 · Light',
+   name:'Day of K-Beauty · Online',when:'OCT / NOV 2027',fw:'FW39–40 · Oct 24 – Nov 6, 2027',
+   lead:'Ulta already runs an Early BF: K-Beauty tentpole in FW39 — we attach to it rather than build a competing moment. Everything is on-platform and on-feed: an online exclusive Discovery Kit, homepage banner, full-weight UB Media on TikTok and Meta, sponsored product, threshold GWP, and the heaviest creator and affiliate push of the year through the Ulta Beauty Collective. No secondary placement, no mailer, no field wave. Deliberately positioned before FW43 — during Black Friday week no incremental slot or support is available, so entering that window would waste the moment.'}
+};
+const EVORDER=['P0','E1','E2','E3','E4'];
+
+/* One-glance brief content per moment.
+   SOURCE NOTE: the initiative rows are taken from the KMU IMC Plan (Program at a
+   Glance) and the FY2026 fiscal-week grid. The idea line, shopper journey and
+   timing rationale are Goodai Global USA's recommendation, not agreed with Ulta. */
+const BRIEF={
+ P0:{hero:18,hero2:12,
+  idea:'The control group. Everything we already fund, running at Ulta with <b>zero Ulta support</b>.',
+  sees:[
+   ['In store','New K-Beauty brand launches land and the dedicated K-Beauty space opens'],
+   ['Field','National field team runs its standard visit cadence across the door network'],
+   ['Always-on','Sample-kit GWP, sponsored product, paid social, ambassadors and Edu-Box keep running'],
+   ['Absent','No endcap, no mailer, no dotcom feature, no co-post, no Rewards multiplier']],
+  why:'This quarter is the proof, not the ask. It shows the engine already runs without Ulta — so the only variable in February is what Ulta adds.'},
+
+ E1:{hero:1,hero2:10,
+  idea:'Two weeks where <b>every K-Beauty lever at Ulta fires at once</b> — for the first time, together.',
+  sees:[
+   ['Social','@ultabeauty co-posts the week; Collective creators go live with affiliate links'],
+   ['Inbox / app','Flash-sale newsletter and app push land the same morning'],
+   ['Ulta.com','K-Beauty tile on the homepage clicks through to a “Shop the KMU Edit” hub'],
+   ['In store','Dedicated endcap, promo table takeover, field team on the floor, free sample kit'],
+   ['Basket','BOGO 50% off plus the multi-brand Exclusive Trial Kit']],
+  why:'Ulta’s new fiscal year opens here — planograms reset and marketing budget unlocks, so this is when a yes is possible. Traffic is genuinely low in FW1–2, so we propose measuring new-to-brand customers, category trial and content volume rather than absolute sales.'},
+
+ E2:{hero:2,hero2:11,
+  idea:'One national date, run as a rolling in-store wave. <b>Sampling is the whole mechanic.</b>',
+  sees:[
+   ['Social','A single co-post announcement; light creator wave'],
+   ['Inbox / app','3X Rewards points newsletter and app push'],
+   ['In store','Etagere takeover and a free K-Beauty sample kit as the hero offer'],
+   ['Field','Headcount concentrated on top-traffic doors only — a visible crowd, not a thin spread'],
+   ['Basket','Rewards promo, 3X points on KMU items']],
+  why:'Placed after Mother’s Day and before Memorial Day, at the start of the summer skincare cycle. A field organisation cannot cover the full door network in 24 hours, so the “day” is one national marketing date executed as a rolling store wave.'},
+
+ E3:{hero:1,hero2:9,
+  idea:'The February playbook again — <b>now proven</b>, on the highest-traffic K-Beauty week of the year.',
+  sees:[
+   ['Social','Co-post plus the full Collective creator wave'],
+   ['Inbox / app','Flash-sale newsletter and app push'],
+   ['Ulta.com','Homepage K-Beauty tile and the KMU Edit hub'],
+   ['In store','Dedicated endcap, promo table takeover, full national field wave'],
+   ['Basket','BOGO 50% off, Exclusive Trial Kit, free sample kit']],
+  why:'Back To School delivers the Gen-Z footfall K-Beauty converts best, and the February readout lets us optimise SKU mix, offer depth and door selection. Plan for cost: BTS is the most contested print and media window of the year, so mailer and UB Media rates peak here.'},
+
+ E4:{hero:3,hero2:16,
+  idea:'No shelf, no flyer. <b>One digital date</b> attached to Ulta’s own Early BF: K-Beauty tentpole.',
+  sees:[
+   ['Social','Heaviest TikTok and Meta weight of the year; live shopping'],
+   ['Creators','Ulta Beauty Collective is the primary traffic driver, not a support act'],
+   ['Ulta.com','Homepage banner and the KMU Edit hub carry the whole moment'],
+   ['Inbox / app','3X Rewards points newsletter and app push'],
+   ['Basket','Trial Kit as an online exclusive, 3X points, threshold GWP']],
+  why:'Ulta already runs an Early BF: K-Beauty tentpole in FW39, so we attach to it rather than build a competing moment. Deliberately clears before FW43 — during Black Friday week no incremental slot or support is available.'}
+};
+
+/* 19 tracks. ask: 'invest'|'access'|'amplify'|null
+   e1..e4: null | {t:label, hero:bool, img:'IMG-xx', spec:'placeholder wording'} */
+const IMG = {
+ 1:['IMG-01','Ulta storefront entrance dressed with K-Beauty Week signage — window cling, floor decal, A-frame. Shot wide, daylight, shoppers walking in.'],
+ 2:['IMG-02','In-store promo table mid-activation: branded table, sample kits stacked high, a visible queue of 6–10 shoppers, promoter in KMEETSU apron handing over a kit.'],
+ 3:['IMG-03','Phone-in-hand mockup: Ulta app / Ulta.com K-Beauty landing page on screen, with a TikTok feed post visible behind. Digital-only feel.'],
+ 4:['IMG-04','K-Beauty Discovery Kit product shot — one outer box, lid off, 6–8 multi-brand deluxe minis fanned out. Clean cream backdrop, top-down.'],
+ 5:['IMG-05','Ulta printed mailer / circular spread mockup, front page, K-Beauty Week hero panel with 4–6 brand product blocks and the offer callout.'],
+ 6:['IMG-06','Free gift sample kit: pouch or sachet-set GWP laid flat with the qualifying products beside it. "Free with purchase" tag visible.'],
+ 7:['IMG-07','Three stacked paid ad units — TikTok in-feed vertical, Meta square, Ulta sponsored display banner — same K-Beauty Week creative across all three.'],
+ 8:['IMG-08','Ulta.com homepage screenshot mockup with a K-Beauty tile in the hero carousel slot, plus the hub page it clicks through to.'],
+ 9:['IMG-09','Dedicated in-line endcap in an Ulta store: full bay, K-Beauty header sign, 5–6 brands merchandised together, shopper reaching for a product.'],
+ 10:['IMG-10','Promo table takeover — wide aisle shot showing the branded table plus a long line of shoppers waiting, store lighting, energy and crowd are the point.'],
+ 11:['IMG-11','5-tier etagere fully taken over by KMEETSU: branded header card, up to 10 brands, front and back facings visible.'],
+ 12:['IMG-12','Field team in action: 2–3 uniformed KMEETSU brand ambassadors on an Ulta floor consulting a shopper, tablet or shade tool in hand.'],
+ 13:['IMG-13','K-Beauty workshop / cluster training: 10–15 Ulta store associates seated around a table, product testers out, trainer presenting.'],
+ 14:['IMG-14','Instagram co-post mockup: post header showing @ultabeauty and @kmeetsu side by side as collaborators, K-Beauty Week creative in frame.'],
+ 15:['IMG-15','Ambassador UGC grid — 4–6 vertical creator clips/stills holding K-Beauty products, shot in and around an Ulta store.'],
+ 16:['IMG-16','Ulta Beauty Collective creator affiliate mockup: creator video with a shoppable Ulta link overlay and commission callout.'],
+ 17:['IMG-17','Post-event readout dashboard mockup: sell-through, new-to-brand %, basket size, door-level heat map. Clean chart UI, no real numbers.'],
+ 18:['IMG-18','Q4 2026 launch evidence: new K-Beauty brand shelf set / POG update in an Ulta store, before-and-after style.'],
+ 19:['IMG-19','Ulta Rewards 3X point mockup: loyalty tier card or app rewards screen with a 3X multiplier badge over K-Beauty products.'],
+ 20:['IMG-20','Ulta email newsletter mockup — K-Beauty Week hero panel as it lands in the inbox, offer callout and brand blocks.'],
+ 25:['IMG-25','Ulta Beauty Collective creators together — a group content day or in-store meetup, Collective badge visible. Group energy, not a single creator.'],
+ 26:['IMG-26','Ulta app push notification on a phone lock screen — K-Beauty Week alert, same creative as the email.'],
+ 22:['IMG-22','Education support: the quarterly Edu-Box open on a back-room desk beside a laptop showing the live virtual training session.'],
+ 23:['IMG-23','Paid creator collaboration: a single contracted creator in a studio-grade shoot with the K-Beauty hero products — polished, not UGC.'],
+ 24:['IMG-24','Sponsored product ads: an Ulta.com search results page for “K-beauty” with our products in the sponsored slots, flagged as Sponsored.'],
+ 21:['IMG-21','UB Collective Korea tour: group of US creators filming in Seoul — Olive Young style street, K-beauty lab visit, or brand HQ. Travel-content energy.']
+};
+const HAVE=new Set([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]);
+/* portrait frames — cropping these to a landscape box cuts the whole point out
+   (the phone, the email, the ad stack), so they are letterboxed instead */
+const TALL=new Set([3,5,6,7,16,20,23,26]);
+const isTall=n=>TALL.has(n);
+const imgFile=n=>HAVE.has(n)?`images/timeline/${IMG[n][0]}.jpg`:'';
+function im(n){return {img:IMG[n][0],spec:IMG[n][1],file:imgFile(n),tall:isTall(n)};}
+
+const TRACKS=[
+{g:'A · Campaign',items:[
+ {n:'Promotion',s:'KMU Flash Sale',ask:'access',base:false,
+  e1:{t:'KMU Flash Sale: BOGO 50% OFF',hero:1,...im(2)},
+  e2:{t:'Rewards Promo',...im(2)},
+  e3:{t:'KMU Flash Sale: BOGO 50% OFF',hero:1,...im(2)},
+  e4:{t:'Rewards Promo — online only',...im(3)}},
+ {n:'Exclusive Set',s:'KMU Exclusive Trial Kit',ask:'access',base:false,
+  e1:{t:'KMU Exclusive Trial Kit',...im(4)},e2:null,
+  e3:{t:'KMU Exclusive Trial Kit',...im(4)},
+  e4:{t:'Trial Kit — online exclusive',...im(4)}},
+ {n:'Printed Mailer',s:'Ulta circular',ask:'invest',base:false,
+  e1:{t:'KMU Mailer Front Page',...im(5)},e2:{t:'KMU Mailer 1/4 Page',...im(5)},
+  e3:{t:'KMU Mailer Front Page',...im(5)},e4:null},
+ {n:'Ulta Rewards Points',s:'Loyalty multiplier',ask:'access',base:false,
+  e1:null,e2:{t:'3X Point on KMU Items',...im(19)},
+  e3:null,e4:{t:'3X Point on KMU Items',...im(19)}},
+ {n:'GWP',s:'Free KMU Sample Kit',ask:null,base:true,
+  e1:{t:'Free KMU Sample Kit + Goodie',...im(6)},
+  e2:{t:'Free KMU Sample Kit — hero mechanic',...im(6)},
+  e3:{t:'Free KMU Sample Kit + Goodie',...im(6)},
+  e4:{t:'Free KMU Sample Kit at threshold',...im(6)}}
+]},
+{g:'B · Store',items:[
+ {n:'In-line Space',s:'Trial Kit shelf placement',ask:'access',base:false,
+  e1:{t:'KMU Exclusive Trial Kit — in-line shelf placement',...im(9)},e2:null,
+  e3:{t:'KMU Exclusive Trial Kit — in-line shelf placement',...im(9)},e4:null},
+ {n:'Secondary Placement',s:'Promo table / etagere',ask:'invest',base:false,
+  e1:{t:'KMU Promo Table Takeover',...im(10)},e2:{t:'KMU Etagere Takeover',...im(11)},
+  e3:{t:'KMU Promo Table Takeover',...im(10)},e4:null}
+]},
+{g:'C · Digital Support',items:[
+ {n:'Dotcom Feature',s:'Homepage banner / tile',ask:'access',base:false,
+  e1:{t:'KMU Dotcom Banner Feature',...im(8)},e2:null,
+  e3:{t:'KMU Dotcom Banner Feature',...im(8)},
+  e4:{t:'KMU Dotcom Banner Feature — primary lever',...im(8)}},
+ {n:'Editorial Page Inclusion',s:'Shop the KMU Edit',ask:'access',base:false,
+  e1:{t:'Shop the KMU Edit',...im(3)},e2:{t:'Shop the KMU Edit',...im(3)},
+  e3:{t:'Shop the KMU Edit',...im(3)},e4:{t:'Shop the KMU Edit',...im(3)}},
+ {n:'Email Campaign',s:'Ulta CRM newsletter',ask:'access',base:false,
+  e1:{t:'Flash Sale Email Newsletter',...im(20)},e2:{t:'3X Point Newsletter',...im(20)},
+  e3:{t:'Flash Sale Email Newsletter',...im(20)},e4:{t:'3X Point Newsletter',...im(20)}},
+ {n:'App Push',s:'Ulta app notification',ask:'access',base:false,
+  e1:{t:'KMU Flash Sale App Push',...im(26)},e2:{t:'3X Point App Push',...im(26)},
+  e3:{t:'KMU Flash Sale App Push',...im(26)},e4:{t:'3X Point App Push',...im(26)}},
+ {n:'UB Media',s:'Meta / Display',ask:'invest',base:false,
+  e1:{t:'TikTok, Meta Paid Ads',...im(7)},e2:{t:'TikTok, Meta Paid Ads',...im(7)},
+  e3:{t:'TikTok, Meta Paid Ads',...im(7)},e4:{t:'TikTok, Meta Paid Ads — heaviest weight',...im(7)}},
+ {n:'Criteo',s:'Sponsored product ads',ask:null,base:true,
+  e1:{t:'Sponsored Product Ads',...im(24)},e2:{t:'Sponsored Product Ads',...im(24)},
+  e3:{t:'Sponsored Product Ads',...im(24)},e4:{t:'Sponsored Product Ads',...im(24)}}
+]},
+{g:'D · Education',items:[
+ {n:'Quarterly Edu-Box',s:'Store associate kit',ask:null,base:true,
+  e1:{t:'Edu-box',...im(22)},e2:{t:'Edu-box',...im(22)},
+  e3:{t:'Edu-box',...im(22)},e4:{t:'Edu-box',...im(22)}},
+ {n:'Virtual Training',s:'1 hour, remote',ask:null,base:true,
+  e1:{t:'Yes',...im(22)},e2:{t:'Yes',...im(22)},
+  e3:{t:'Yes',...im(22)},e4:{t:'Yes',...im(22)}},
+ {n:'Field Team',s:'National brand ambassadors',ask:null,base:true,
+  e1:{t:'Full national wave',...im(12)},e2:{t:'Top-traffic doors only',...im(12)},
+  e3:{t:'Full national wave',...im(12)},e4:{t:'Content capture only',...im(12)}},
+ {n:'K-Beauty Workshop',s:'Round Robin / Cluster',ask:'access',base:false,
+  e1:{t:'Round Robin / Cluster',...im(13)},e2:{t:'Round Robin / Cluster',...im(13)},
+  e3:{t:'Round Robin / Cluster',...im(13)},e4:null}
+]},
+{g:'E · Social',items:[
+ {n:'Instagram Co-Post',s:'@ultabeauty × KMEETSU',ask:'amplify',base:false,
+  e1:{t:'KMU Co-Post',...im(14)},e2:{t:'KMU Co-Post',...im(14)},
+  e3:{t:'KMU Co-Post',...im(14)},e4:{t:'KMU Co-Post',...im(14)}},
+ {n:'KMU Social Paid Ads',s:'Owned-channel paid',ask:null,base:true,
+  e1:{t:'Yes',...im(7)},e2:{t:'Yes',...im(7)},
+  e3:{t:'Yes',...im(7)},e4:{t:'Yes — conversion weighted',...im(7)}}
+]},
+{g:'F · Ambassador',items:[
+ {n:'UB Affiliate Marketing',s:'Ulta affiliate links',ask:'amplify',base:true,
+  e1:{t:'Yes',...im(16)},e2:{t:'Yes',...im(16)},
+  e3:{t:'Yes',...im(16)},e4:{t:'Yes — primary traffic driver',...im(16)}},
+ {n:'KMU Ambassador Content',s:'Owned creator network',ask:null,base:true,
+  e1:{t:'Yes',...im(15)},e2:{t:'Yes',...im(15)},
+  e3:{t:'Yes',...im(15)},e4:{t:'Yes — live + TikTok first',...im(15)}},
+ {n:'Paid Collaboration',s:'Contracted creator content',ask:null,base:false,
+  e1:{t:'Yes',...im(23)},e2:{t:'Yes',...im(23)},
+  e3:{t:'Yes',...im(23)},e4:{t:'Yes',...im(23)}},
+ {n:'UB Collective Collab',s:'Ulta Beauty Collective',ask:'amplify',base:true,
+  e1:{t:'Yes',...im(25)},e2:{t:'Yes',...im(25)},
+  e3:{t:'Yes',...im(25)},e4:{t:'Yes',...im(25)}},
+ {n:'UB Collective Korea Tour',s:'Creator trip to Korea',ask:null,base:false,
+  e1:{t:'Korea tour with UB Collective',...im(21)},e2:null,
+  e3:null,e4:null}
+]}
+];
+
+/* Ulta ask consolidation */
+const ASKS=[
+ {kind:'invest',label:'Co-Investment',title:'Shared Budget',cost:'Ulta budget required',free:false,
+  items:[
+   {n:'Printed mailer — front page',m:'OCT',y:'2026',crit:1},
+   {n:'Secondary placement — promo table &amp; etagere',m:'NOV',y:'2026',crit:0},
+   {n:'UB Media — TikTok, Meta, Display',m:'NOV',y:'2026',crit:0}
+  ]},
+ {kind:'access',label:'Access & Slot',title:'No Ulta Spend',cost:'Slot or approval only',free:true,
+  items:[
+   {n:'Dedicated K-Beauty endcap',m:'SEP',y:'2026',crit:1},
+   {n:'Trial Kit SKU set-up',m:'OCT',y:'2026',crit:1},
+   {n:'Promotion approval — BOGO 50%',m:'NOV',y:'2026',crit:0},
+   {n:'Ulta Rewards — 3X points',m:'NOV',y:'2026',crit:0},
+   {n:'Email newsletter slot',m:'NOV',y:'2026',crit:0},
+   {n:'Dotcom banner / K-Beauty tile',m:'NOV',y:'2026',crit:0},
+   {n:'Editorial page — Shop the KMU Edit',m:'DEC',y:'2026',crit:0},
+   {n:'App push notification',m:'DEC',y:'2026',crit:0},
+   {n:'K-Beauty Workshop dates',m:'DEC',y:'2026',crit:0}
+  ]},
+ {kind:'amplify',label:'Amplify',title:'Resource Only',cost:'No budget, no shelf',free:true,
+  items:[
+   {n:'Instagram co-post',m:'DEC',y:'2026',crit:0},
+   {n:'UB Affiliate links &amp; commission',m:'DEC',y:'2026',crit:0},
+   {n:'UB Collective creator list',m:'DEC',y:'2026',crit:0}
+  ]}
+];
+
+/* ══════════════════════════════════════════════════
+   RENDER — 02 TIMELINE
+   ══════════════════════════════════════════════════ */
+const tl=document.getElementById('tl');
+let H='';
+
+/* every value below is interpolated into an HTML attribute — some specs contain
+   double quotes (e.g. the "Free with purchase" tag), which would break the tag */
+const esc=s=>String(s==null?'':s)
+  .replace(/&/g,'&amp;').replace(/"/g,'&quot;')
+  .replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+/* stagger order: Phase 0 first, then each moment left to right */
+const MOMENTORDER={4:1,7:2,10:3,13:4};
+const EVCOL={4:'E1',7:'E2',10:'E3',13:'E4'};
+/* one icon per lane — drawn inline so they stay crisp and on-brand */
+const ICONS=[
+ '<path d="M4 10v4a1 1 0 0 0 1 1h3l5 4V5L8 9H5a1 1 0 0 0-1 1z"/><path d="M17.5 8.5a5 5 0 0 1 0 7"/>',                       /* Campaign — megaphone */
+ '<path d="M4 9h16v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9z"/><path d="M3 9l1.6-4h14.8L21 9"/><path d="M10 20v-6h4v6"/>',          /* Store — storefront */
+ '<rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/>',                                       /* Digital — screen */
+ '<path d="M12 3.5 2.5 8.2 12 13l9.5-4.8L12 3.5z"/><path d="M6.5 10.6V15c0 1.6 2.5 3 5.5 3s5.5-1.4 5.5-3v-4.4"/>',            /* Education — cap */
+ '<path d="M20.5 11.5A7.5 7.5 0 0 1 13 19H9l-5 3 1.4-4.1A7.5 7.5 0 0 1 11.5 4h1.5a7.5 7.5 0 0 1 7.5 7.5z"/>',                 /* Social — bubble */
+ '<path d="M12 3.2l2.6 5.5 6 .9-4.3 4.2 1 6-5.3-2.8L6.7 19.8l1-6L3.4 9.6l6-.9L12 3.2z"/>'                                     /* Ambassador — star */
+];
+const icon=gi=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${ICONS[gi]}</svg>`;
+
+/* year bar */
+H+='<div class="yearbar"><div>Fiscal Year</div>';
+MONTHS.forEach((m,i)=>{H+=`<div class="${m.y==='2027'?'y-on':''}">${(i===0||MONTHS[i-1].y!==m.y)?'FY'+m.y:''}</div>`;});
+H+='</div>';
+
+/* ---------- activity ribbon: how much is in market, month by month ----------
+   Baseline is the always-on engine; the four moments are the peaks.
+   x-positions follow the same non-uniform month widths as the grid.        */
+function ribbonRow(){
+  const W=[1,1,1,1,2.2,1,1,2.2,1,1,2.2,1,1,2.2,1], tot=W.reduce((a,b)=>a+b,0);
+  const countBase=()=>{let n=0;TRACKS.forEach(g=>g.items.forEach(t=>{if(t.base)n++;}));return n;};
+  const countEv=k=>{const i=k.toLowerCase();let n=0;TRACKS.forEach(g=>g.items.forEach(t=>{if(t[i])n++;}));return n;};
+  const base=countBase();
+  const vals=MONTHS.map((m,i)=>EVCOL[i]?countEv(EVCOL[i]):base);
+  const H=100, top=12, bot=94, maxV=Math.max(...vals);
+  const y=v=>bot-(v/maxV)*(bot-top);
+
+  let x=0; const pts=[];
+  W.forEach((w,i)=>{
+    const x0=x/tot*1000, x1=(x+w)/tot*1000, cx=(x0+x1)/2;
+    if(EVCOL[i]){
+      pts.push([x0+(cx-x0)*0.18, y(base)]);
+      pts.push([cx, y(vals[i])]);
+      pts.push([x1-(x1-cx)*0.18, y(base)]);
+    } else pts.push([cx, y(vals[i])]);
+    x+=w;
+  });
+  const all=[[0,pts[0][1]],...pts,[1000,pts[pts.length-1][1]]];
+  const line=all.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ');
+  const area=`${line} L1000,${H} L0,${H} Z`;
+  return `<div class="row ribbon"><div class="lbl"><div>
+      <div class="lbl-txt">Activity across the year</div>
+      <div class="lbl-sm">Never zero &middot; four peaks</div></div></div>
+    <div class="rb"><svg viewBox="0 0 1000 ${H}" preserveAspectRatio="none" aria-hidden="true">
+      <defs><linearGradient id="rbg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#E8186D" stop-opacity=".32"/>
+        <stop offset="100%" stop-color="#F5741D" stop-opacity=".05"/></linearGradient></defs>
+      <line x1="0" y1="${y(base).toFixed(1)}" x2="1000" y2="${y(base).toFixed(1)}"
+            stroke="#2D1B2E" stroke-opacity=".16" stroke-width="1" stroke-dasharray="4 4" vector-effect="non-scaling-stroke"/>
+      <path d="${area}" fill="url(#rbg)"/>
+      <path d="${line}" fill="none" stroke="#E8186D" stroke-width="2.4"
+            stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    </svg></div></div>`;
+}
+
+/* axis */
+function axisRow(foot){
+  let A=`<div class="row axis${foot?' foot':''}"><div class="lbl">Month / Ulta FW</div>`;
+  MONTHS.forEach((m,i)=>{A+=`<div class="cell"><div class="ax-m">${m.m}</div><div class="ax-y">${m.y}</div><div class="ax-fw">${m.fw}</div></div>`;});
+  return A+'</div>';
+}
+H+=axisRow(false);
+
+/* tentpole band */
+H+='<div class="row band"><div class="lbl"><div><div class="lbl-txt">Ulta Tentpole Calendar</div><div class="lbl-sm">Their rhythm, not ours</div></div></div>';
+for(let i=0;i<NC;i++){
+  const t=TENT[i]||[];
+  H+=`<div class="cell">${t.map(x=>`<div class="tp ${x.c}">${x.t}</div>`).join('')}</div>`;
+}
+H+='</div>';
+
+/* moments band */
+H+='<div class="row mband"><div class="lbl"><div><div class="lbl-txt">The Four Moments</div><div class="lbl-sm">Click for full brief</div></div></div><div class="mband-inner">';
+{
+ const map={};
+ EVORDER.forEach(k=>{const e=EV[k];map[e.col[0]]=e;});
+ for(let i=0;i<NC;i++){
+   const e=map[i];
+   if(e){
+     const span=e.col[1]-e.col[0]+1;
+     H+=`<div class="mchip ${e.kind}" data-ev="${e.key}" style="grid-column:span ${span};margin:0 4px">
+       <div class="t1">${e.kind==='full'?'Full Swing':e.kind==='light'?'Light':'Warm-Up'}</div>
+       <div class="t2">${e.name.replace(' · ','<br>')}</div>
+       <div class="t3">${e.fw.split(' · ')[0]}</div></div>`;
+     i+=span-1;
+   } else H+='<div></div>';
+ }
+}
+H+='</div></div>';
+
+H+=ribbonRow();
+
+/* tracks */
+let askCount={invest:0,access:0,amplify:0};
+let rowIdx=0;
+TRACKS.forEach((grp,gi)=>{
+
+  /* ---- collapsed group lane: one circle per moment, sized by how many fire ---- */
+  const anyBase=grp.items.some(t=>t.base);
+  H+=`<div class="row glane">${anyBase?'<span class="flow"></span>':''}<div class="lbl"><div>
+        <div class="g-n">${grp.g}</div>
+        <div class="g-s">${grp.items.length} initiative${grp.items.length>1?'s':''}</div>
+      </div></div>`;
+  for(let i=0;i<NC;i++){
+    const ek=EVCOL[i]; let inner='';
+    if(ek){
+      const idx=ek.toLowerCase();
+      const live=grp.items.filter(t=>t[idx]);
+      if(live.length){
+        const kind=EV[ek].kind;
+        const hasAsk=live.some(t=>t.ask);
+        const d=Math.round(32+live.length*3.4);         /* circle grows with concurrency */
+        const names=live.map(t=>t.n).join(' · ');
+        const delay=MOMENTORDER[i]*230 + gi*70;
+        inner+=`<span class="clus ${kind} ${hasAsk?'askc':''}" style="width:${d}px;height:${d}px;--d:${delay}ms"
+          tabindex="0" role="button" data-ev="${ek}" data-gi="${gi}"
+          aria-label="${esc(grp.g)}, ${live.length} initiatives at ${esc(EV[ek].name)}"
+          data-tk="${esc(grp.g)}" data-gp="${esc(EV[ek].name)}" data-de="${live.length} of ${grp.items.length} firing — ${esc(names)}"
+          data-ask="${hasAsk?'support':''}">${icon(gi)}</span>`;
+      }
+    } else if(anyBase && i===1){          /* one marker for the whole warm-up span */
+      const n=grp.items.filter(t=>t.base).length;
+      const dz=Math.round(24+n*3.4);
+      inner+=`<span class="clus zero" style="width:${dz}px;height:${dz}px;--d:${gi*70}ms"
+        tabindex="0" role="button" data-ev="P0" data-gi="${gi}"
+        aria-label="${esc(grp.g)}, ${n} always-on initiatives"
+        data-tk="${esc(grp.g)}" data-gp="Always-on baseline" data-de="${n} always-on initiative${n>1?'s':''} — self-funded, no Ulta support"
+        data-ask="">${icon(gi)}</span>`;
+    }
+    H+=`<div class="cell">${inner}</div>`;
+  }
+  H+='</div>';
+
+  /* ---- expanded: original per-initiative rows ---- */
+  H+=`<div class="grouprow"><div class="g-lbl">${grp.g}<span class="gcount">${grp.items.length}</span></div><div class="g-rest"></div></div>`;
+  grp.items.forEach(t=>{
+    if(t.ask) askCount[t.ask]++;
+    rowIdx++;
+    H+=`<div class="row track" data-ask="${t.ask||''}">${t.base?'<span class="flow"></span>':''}
+      <div class="lbl"><span class="askdot ${t.ask?'':'none'}" title="${t.ask?'Ulta support required':'Goodai Global USA owned'}"></span>
+      <div><div class="lbl-txt">${t.n}</div><div class="lbl-sm">${t.s}</div></div></div>`;
+    for(let i=0;i<NC;i++){
+      const ek=EVCOL[i];
+      let inner='';
+      if(ek){
+        const idx=ek.toLowerCase();
+        const d=t[idx];
+        if(d){
+          const kind=EV[ek].kind;
+          const cls=[ 'node', d.hero?'hero':kind, t.ask?'askn':'' ].join(' ');
+          const delay=MOMENTORDER[i]*230 + rowIdx*26;   /* column ignites, then zips downward */
+          inner+=`<span class="${cls}" style="--d:${delay}ms" tabindex="0" role="button"
+            aria-label="${esc(t.n)} — ${esc(d.t)}"
+            data-tk="${esc(t.n)}" data-gp="${esc(grp.g)}" data-de="${esc(d.t)}" data-img="${esc(d.img)}" data-spec="${esc(d.spec)}" data-file="${esc(d.file)}" data-ask="${t.ask||''}"></span>`;
+        }
+      } else if(t.base && i<3){
+        inner+=`<span class="node reg" style="--d:${rowIdx*26}ms" tabindex="0" role="button"
+          aria-label="${esc(t.n)} — always-on baseline"
+          data-tk="${esc(t.n)}" data-gp="${esc(grp.g)}" data-de="Always-on baseline — self-funded, no Ulta support" data-img="IMG-18" data-spec="${esc(IMG[18][1])}" data-file="images/timeline/IMG-18.jpg" data-ask=""></span>`;
+      }
+      H+=`<div class="cell">${inner}</div>`;
+    }
+    H+='</div>';
+  });
+});
+
+/* the axis can't pin without a scroll container, so mirror it at the foot
+   of the grid — keeps the months readable at the bottom of a 24-row view */
+H+=axisRow(true);
+
+tl.innerHTML=H;
+
+/* cluster circles open the moment they belong to */
+tl.querySelectorAll('.clus').forEach(c=>{
+  const go=()=>openDrawer(c.dataset.ev, +c.dataset.gi);
+  c.onclick=go;
+  c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}};
+});
+
+/* moment chip click */
+tl.querySelectorAll('.mchip').forEach(c=>{
+  c.tabIndex=0; c.setAttribute('role','button');
+  c.onclick=()=>openDrawer(c.dataset.ev);
+  c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDrawer(c.dataset.ev);}};
+});
+
+/* Reveal animation. Arm only once we know we can run it, and always guarantee a
+   fallback so the nodes can never be left permanently invisible. */
+try{
+  if('IntersectionObserver' in window){
+    tl.classList.add('arm');
+    const light=()=>tl.classList.add('lit');
+    const io=new IntersectionObserver(es=>{
+      es.forEach(e=>{if(e.isIntersecting){light();io.disconnect();}});
+    },{threshold:.06});
+    io.observe(tl);
+    setTimeout(light,3000);            /* safety net */
+  }
+}catch(err){ tl.classList.remove('arm'); }
+
+/* horizontal scroll affordance */
+const tlwrap=document.getElementById('tlwrap'),tlscroll=document.getElementById('tlscroll');
+function scrollState(){
+  const fits=tlscroll.scrollWidth<=tlscroll.clientWidth+2;
+  tlwrap.classList.toggle('nofit',fits);
+  tlwrap.classList.toggle('scrolled',!fits && tlscroll.scrollLeft>8);
+}
+tlscroll.addEventListener('scroll',scrollState,{passive:true});
+addEventListener('resize',scrollState);
+scrollState();
+
+/* ══════════════════════════════════════════════════
+   RENDER — 03 MATRIX
+   ══════════════════════════════════════════════════ */
+/* always-on baseline copy per track */
+const REG={
+ 'GWP':'Free KMU Sample Kit',
+ 'Criteo':'Sponsored Product Ads',
+ 'Quarterly Edu-Box':'Edu-box (new SKUs)',
+ 'Virtual Training':'Yes',
+ 'Field Team':'Yes',
+ 'KMU Social Paid Ads':'Yes',
+ 'UB Affiliate Marketing':'Yes',
+ 'KMU Ambassador Content':'Yes',
+ 'UB Collective Collab':'Yes'
+};
+
+/* ---------- 01 PROGRAM AT A GLANCE ---------- */
+{
+ const gl=document.getElementById('gl');
+ let T='<thead>'
+  +'<tr class="t1"><th></th><th></th><th colspan="2" style="text-align:center">Initiative</th>'
+  +'<th>2&times; a year &middot; Feb, Aug</th><th>2&times; a year &middot; May, Nov</th><th>Always on</th></tr>'
+  +'<tr class="t2"><th class="c-cat">Category</th><th class="c-item">Item</th>'
+  +'<th class="c-own">Ulta</th><th class="c-own">GG</th>'
+  +'<th class="c-w">KMU WEEK</th><th class="c-l">KMU WEEK LIGHT</th><th class="c-r">REGULAR</th></tr></thead><tbody>';
+ TRACKS.forEach(grp=>{
+   const label=grp.g.replace(/^[A-F] · /,'');
+   grp.items.forEach((t,k)=>{
+     const last=k===grp.items.length-1;
+     const week = t.e1 ? t.e1.t : '';
+     const light= t.e2 ? t.e2.t : (t.e4? t.e4.t : '');
+     const reg  = REG[t.n] || '';
+     T+=`<tr class="${last?'grp-end':''}">`
+      + (k===0?`<td class="cat" rowspan="${grp.items.length}">${label}</td>`:'')
+      + `<td class="item ${t.ask?'ulta':''}">${t.n}</td>`
+      + `<td class="own">${t.ask?'<i class="u"></i>':''}</td>`
+      + `<td class="own">${t.ask?'':'<i class="g"></i>'}</td>`
+      + `<td class="v w">${week}</td><td class="v l">${light}</td><td class="v r">${reg}</td></tr>`;
+   });
+ });
+ gl.innerHTML=T+'</tbody>';
+}
+
+const mx=document.getElementById('mx');
+let M='<div class="mx-row mx-head"><div>Initiative</div>'
+ +'<div class="h-full">Full Swing<br>K-Beauty Week · Feb &amp; Aug</div>'
+ +'<div class="h-light">Light · Offline<br>Day of K-Beauty · May</div>'
+ +'<div class="h-light">Light · Online<br>Day of K-Beauty · Oct/Nov</div>'
+ +'<div class="h-reg">Always-On<br>Every other week</div></div>';
+TRACKS.forEach(grp=>{
+  M+=`<div class="mx-row mx-grp"><div>${grp.g}</div></div>`;
+  grp.items.forEach(t=>{
+    const cell=d=>d?`<div class="mx-cell">${d.t}</div>`:'<div class="mx-cell off">—</div>';
+    const rcell=REG[t.n]?`<div class="mx-cell reg">${REG[t.n]}</div>`:'<div class="mx-cell off">—</div>';
+    M+=`<div class="mx-row"><div class="mx-item"><span class="askdot ${t.ask?'':'none'}"></span>${t.n}</div>${cell(t.e1)}${cell(t.e2)}${cell(t.e4)}${rcell}</div>`;
+  });
+});
+mx.innerHTML=M;
+
+/* ══════════════════════════════════════════════════
+   RENDER — 03 INSIDE A K-BEAUTY WEEK
+   Same 24 initiatives, four intensities, all shown at once.
+   ══════════════════════════════════════════════════ */
+const VERSIONS=[
+ {id:'e1', cls:'full',  tag:'Full Swing', nm:'K-Beauty Week',   wh:'Feb & Aug',
+  line:'The full programme — every lever fires at once, in store, on site and on feed.'},
+ {id:'e2', cls:'light', tag:'Light · Offline', nm:'Day of K-Beauty', wh:'May',
+  line:'One national date, sampling-led. Field team concentrated on the highest-traffic doors.'},
+ {id:'e4', cls:'light', tag:'Light · Online',  nm:'Day of K-Beauty', wh:'Oct / Nov',
+  line:'Digital only. Attached to Ulta’s own Early BF: K-Beauty tentpole, clear of Black Friday.'},
+ {id:'reg',cls:'',      tag:'Always-On', nm:'Regular weeks',  wh:'Every other week',
+  line:'What keeps running between the four moments — funded by Goodai Global USA.'}
+];
+/* The concrete request attached to each initiative — what we actually ask Ulta
+   to do, not just which line item they touch. Shown under the card in Section 03. */
+const REQ={
+ 'Promotion':'Designate KMU Week as a promo week and approve BOGO 50% OFF.',
+ 'Exclusive Set':'Approve the KMU Exclusive Trial Kit for sale online.',
+ 'Printed Mailer':'One KMU Week announcement page in the printed mailer — 50% cost share.',
+ 'Ulta Rewards Points':'Switch on 3X Rewards points across all KMU items for the week.',
+ 'In-line Space':'Secure in-line shelf placement for the KMU Exclusive Trial Kit across the top 5 metro markets.',
+ 'Secondary Placement':'Co-op budget support for the secondary placement, and approval for the in-store sample distribution event.',
+ 'Dotcom Feature':'Produce the Ulta.com banner for KMU Week.',
+ 'Editorial Page Inclusion':'Include KMU in the K-Beauty edit page for the duration of the week.',
+ 'Email Campaign':'Carry KMU Week in the Rewards member newsletter.',
+ 'App Push':'Send one app push on the opening day of the week.',
+ 'UB Media':'Match 50% of the UB Media spend across TikTok and Meta.',
+ 'K-Beauty Workshop':'Schedule the cluster workshops in the weeks before the event.',
+ 'Instagram Co-Post':'Publish as a collaborator post, not a repost.',
+ 'UB Affiliate Marketing':'Open the affiliate link set and confirm the commission rate.',
+ 'Virtual Training':'Schedule the session two weeks ahead of each event.',
+ 'Quarterly Edu-Box':'Run this as a standalone KMU programme rather than inside the DME box — tracking required.'
+};
+
+const KINDLABEL={invest:'budget',access:'slot',amplify:'resource'};
+
+/* board-only grouping: Campaign+Store roll up under Sales, Social+Ambassador merge */
+const BOARDZONES=[
+ {label:'Sales',               sub:'Campaign &amp; Store', groups:['A · Campaign','B · Store']},
+ {label:'Digital Support',     sub:'',                     groups:['C · Digital Support']},
+ {label:'Education',           sub:'',                     groups:['D · Education']},
+ {label:'Social &amp; Ambassador', sub:'Owned &amp; creator', groups:['E · Social','F · Ambassador']}
+];
+
+function cellFor(t,vid){
+  if(vid==='reg') return t.base ? {...(t.e1||t.e2||t.e3||t.e4||{}), t:REG[t.n]||'Yes'} : null;
+  return t[vid];
+}
+
+function renderBoard(vid){
+  const v=VERSIONS.find(x=>x.id===vid);
+  document.getElementById('vtabs').querySelectorAll('.vtab').forEach(b=>b.classList.toggle('on',b.dataset.v===vid));
+  document.getElementById('vlead').innerHTML=`<b>${esc(v.tag)} — ${esc(v.nm)}</b><span>${v.line}</span>`;
+
+  let B='', total=0, kinds={invest:0,access:0,amplify:0};
+  BOARDZONES.forEach(z=>{
+    const live=[];
+    z.groups.forEach(gn=>{
+      const grp=TRACKS.find(g=>g.g===gn); if(!grp) return;
+      grp.items.forEach(t=>{ const d=cellFor(t,vid); if(d) live.push([t,d]); });
+    });
+    if(!live.length) return;
+    total+=live.length;
+    B+=`<div class="zone"><div class="zhead"><h3>${z.label}</h3>${z.sub?`<em>${z.sub}</em>`:''}</div><div class="cards">`;
+    live.forEach(([t,d])=>{
+      if(t.ask) kinds[t.ask]++;
+      B+=`<div class="card ${REQ[t.n]?'u':''}">`
+       + `<div class="${d.tall?'cimg tall':'cimg'}">${d.file?`<img src="${esc(d.file)}" alt="${esc(t.n)}" loading="lazy">`:`<span class="ph">${esc(d.img||'TBD')}</span>`}</div>`
+       + `<div class="cbody"><div class="cnm">${esc(t.n)}${REQ[t.n]?'<span class="uflag">Ulta</span>':''}</div>`
+       + `<div class="ctx">${esc(d.t)}</div>`
+       + (REQ[t.n]?`<div class="creq"><b>Ask of Ulta</b>${esc(REQ[t.n])}</div>`:'')
+       + `</div></div>`;
+    });
+    B+='</div>';
+    B+='</div>';
+  });
+  document.getElementById('board').innerHTML=B;
+
+  const byKind={invest:[],access:[],amplify:[]};
+  TRACKS.forEach(g=>g.items.forEach(t=>{ if(REQ[t.n] && cellFor(t,vid)) byKind[t.ask||'access'].push(t.n); }));
+  const col=(k,head,sub)=> byKind[k].length
+    ? `<div class="vs-col"><div class="vs-h">${head}</div><div class="vs-s">${sub}</div>`
+      + `<ul class="vs-l">${byKind[k].map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div>` : '';
+  document.getElementById('vsum').innerHTML=
+     `<div class="vs-grid">`
+   + col('invest','Budget','Shared cost, 50:50')
+   + col('access','Slot or approval','No Ulta spend')
+   + col('amplify','Resource','No budget, no shelf')
+   + `</div>`;
+}
+
+/* tabs */
+{
+  const tabs=document.getElementById('vtabs');
+  tabs.innerHTML=VERSIONS.map(v=>`<button class="vtab ${v.cls}" data-v="${v.id}">
+      <div class="vt-tag">${esc(v.tag)}</div>
+      <div class="vt-nm">${esc(v.nm)}</div>
+      <div class="vt-wh">${esc(v.wh)}</div></button>`).join('');
+  tabs.querySelectorAll('.vtab').forEach(b=>b.onclick=()=>renderBoard(b.dataset.v));
+  renderBoard('e1');
+}
+
+/* ══════════════════════════════════════════════════
+   RENDER — 04 ASKS
+   ══════════════════════════════════════════════════ */
+const asks=document.getElementById('asks');
+asks.innerHTML=ASKS.map(a=>`
+ <div class="askcard ${a.kind}">
+   <div class="ac-head">
+     <div class="ac-kind">${a.label} · ${a.items.length} items</div>
+     <div class="ac-title">${a.title}</div>
+     <span class="ac-cost ${a.free?'free':''}">${a.cost}</span>
+   </div>
+   <div class="ac-list">${a.items.map(i=>`
+     <div class="ac-item ${i.crit?'crit':''}">
+       <div class="ac-due"><b>${i.m}</b><span>${i.y}</span></div>
+       <div class="ac-name">${i.n}</div>
+     </div>`).join('')}</div>
+ </div>`).join('');
+
+/* ══════════════════════════════════════════════════
+   INTERACTION — hover preview
+   ══════════════════════════════════════════════════ */
+const pv=document.getElementById('pv');
+function showPreview(n){
+  /* group clusters summarise several initiatives, so there is no single image
+     to preview — only the per-initiative nodes carry one */
+  const hasImg=!!n.dataset.img, file=n.dataset.file||'';
+  const box=document.getElementById('pv-imgbox');
+  box.style.display=hasImg?'':'none';
+  box.classList.toggle('has',!!file);
+  box.classList.toggle('tall',isTall(parseInt((n.dataset.img||'').slice(4),10)));
+  if(hasImg){
+    document.getElementById('pv-id').textContent=n.dataset.img;
+    document.getElementById('pv-spec').textContent=n.dataset.spec;
+    const el=document.getElementById('pv-img');
+    if(file){ el.src=file; el.style.display='block'; } else { el.removeAttribute('src'); el.style.display='none'; }
+  }
+  document.getElementById('pv-tk').textContent=n.dataset.gp||'Initiative';
+  document.getElementById('pv-nm').textContent=n.dataset.tk;
+  document.getElementById('pv-de').textContent=n.dataset.de;
+  document.getElementById('pv-askwrap').innerHTML=n.dataset.ask?`<div class="pv-ask">Ulta ${n.dataset.ask} required</div>`:'';
+  pv.classList.add('on');
+  const r=n.getBoundingClientRect();
+  let x=r.left+r.width/2-150, y=r.bottom+12;
+  if(x<10)x=10; if(x+300>innerWidth-10)x=innerWidth-310;
+  const ph=hasImg?345:150; if(y+ph>innerHeight) y=r.top-(ph+8);
+  if(y<10)y=10;
+  pv.style.left=x+'px'; pv.style.top=y+'px';
+}
+const hidePreview=()=>pv.classList.remove('on');
+document.addEventListener('mouseover',e=>{const n=e.target.closest('.node');if(n)showPreview(n);});
+document.addEventListener('mouseout',e=>{if(e.target.closest('.node'))hidePreview();});
+document.addEventListener('focusin',e=>{const n=e.target.closest('.node');if(n)showPreview(n);});
+document.addEventListener('focusout',e=>{if(e.target.closest('.node'))hidePreview();});
+
+/* ══════════════════════════════════════════════════
+   INTERACTION — drawer
+   ══════════════════════════════════════════════════ */
+const scrim=document.getElementById('scrim'),drawer=document.getElementById('drawer');
+/* paint a hero slot: real photo if delivered, spec placeholder if not */
+const imgNum=d=>d&&d.img?parseInt(d.img.slice(4),10):0;
+function setHero(box,n){
+  if(!box)return;
+  const file=imgFile(n), img=box.querySelector('img');
+  box.querySelector('.pid').textContent=IMG[n][0];
+  box.querySelector('.pspec').textContent=IMG[n][1];
+  box.classList.toggle('has',!!file);
+  box.classList.toggle('tall',isTall(n));
+  if(file){ img.src=file; } else { img.removeAttribute('src'); }
+}
+function openDrawer(key,gi){
+  const e=EV[key], b=BRIEF[key];
+  const lane = (gi!=null && !Number.isNaN(gi)) ? TRACKS[gi] : null;
+  const idx=key.toLowerCase();
+
+  /* which initiatives are live here */
+  const pick=t=> key==='P0' ? !!t.base : !!t[idx];
+  const src = lane ? [lane] : TRACKS;
+  const live=[]; src.forEach(g=>g.items.forEach(t=>{ if(pick(t)) live.push(t); }));
+  const asks=live.filter(t=>t.ask);
+
+  const hd=document.getElementById('dw-head');
+  hd.className='dw-head '+e.kind;
+  document.getElementById('dw-tag').textContent = lane ? e.tag+' · '+e.name : e.tag;
+  document.getElementById('dw-title').textContent = lane ? lane.g.replace(/^[A-F] · /,'') : e.name;
+  document.getElementById('dw-when').textContent = e.when;
+
+  /* scope bar — only when a single lane was clicked */
+  const sc=document.getElementById('dw-scope');
+  if(lane){
+    sc.style.display='';
+    sc.innerHTML=`<b>Lane</b> ${esc(lane.g)} — ${live.length} of ${lane.items.length} firing`
+      +`<button class="dw-back" id="dw-full">See the whole moment &rarr;</button>`;
+    document.getElementById('dw-full').onclick=()=>openDrawer(key);
+  } else sc.style.display='none';
+
+  /* hero: lane view uses the first live initiative's own image */
+  const first=live[0];
+  const firstD = first ? (key==='P0' ? (first.e1||first.e2||first.e3||first.e4) : first[idx]) : null;
+  const heroN = lane ? (imgNum(firstD) || b.hero) : b.hero;
+  setHero(document.getElementById('dw-hero'),heroN);
+
+  document.getElementById('dw-idea').innerHTML = lane
+    ? `<b>${live.length} of ${lane.items.length}</b> ${esc(lane.g.replace(/^[A-F] · /,'').toLowerCase())} initiatives run during ${esc(e.name)}.`
+    : b.idea;
+
+  const [fw,dates]=e.fw.split(' · ');
+  document.getElementById('dw-facts').innerHTML=
+    `<span class="dw-fw">${esc(fw)}</span><span class="dw-dates">${esc(dates||'')}</span>`;
+
+  let L='';
+  if(lane){
+    /* ---- lane view: exactly what this circle counted ---- */
+    L+=`<div class="dw-sec">What runs in this lane</div>`;
+    lane.items.forEach(t=>{
+      let d;
+      if(key==='P0'){
+        if(!t.base) return;
+        const any=t.e1||t.e2||t.e3||t.e4||{};
+        d={t:(REG[t.n]||'Always-on')+' — self-funded, no Ulta support',file:any.file,img:any.img,tall:any.tall};
+      } else d=t[idx];
+      if(!d) return;
+      L+=`<div class="li">`
+       + (d.file?`<img class="${d.tall?'th tall':'th'}" src="${esc(d.file)}" alt="">`:`<span class="th"></span>`)
+       + `<div><div class="nm">${esc(t.n)}${t.ask?`<span class="fl">Ulta ${t.ask}</span>`:''}</div>`
+       + `<div class="tx">${esc(d.t)}</div></div></div>`;
+    });
+    const off=lane.items.filter(t=>!pick(t));
+    if(off.length){
+      L+=`<div class="dw-sec">Not running here (${off.length})</div><div class="chips">`
+        + off.map(t=>`<span class="chip">${esc(t.n)}</span>`).join('')+'</div>';
+    }
+  } else {
+    /* ---- full moment brief ---- */
+    L+='<div class="dw-sec">What the shopper sees</div>';
+    b.sees.forEach(s=>{ L+=`<div class="jr"><span class="st">${esc(s[0])}</span><span class="tx">${s[1]}</span></div>`; });
+    L+=`<div class="dw-hero small" id="dw-hero2" style="margin:26px -34px 0;border-top:1px solid var(--line)">
+          <img alt=""><div class="pid">${IMG[b.hero2][0]}</div>
+          <div class="pspec">${esc(IMG[b.hero2][1])}</div></div>`;
+    L+=`<div class="dw-sec">Everything running (${live.length})</div><div class="chips">`
+      + live.map(t=>`<span class="chip ${t.ask?'u':''}">${esc(t.n)}</span>`).join('')+'</div>';
+  }
+
+  if(asks.length){
+    L+=`<div class="dw-sec">Needs Ulta (${asks.length})</div><div class="chips">`
+      + asks.map(t=>`<span class="chip u">${esc(t.n)}</span>`).join('')+'</div>';
+  }
+  L+=`<div class="dw-why"><b>Why this timing</b>${b.why}</div>`;
+  L+=`<div class="dw-src">Initiative rows are taken from the KMU IMC Plan (Program at a Glance) and the Ulta FY2026 fiscal-week grid. The idea line, shopper journey and timing rationale are Goodai Global USA&rsquo;s recommendation and are not yet agreed with Ulta.</div>`;
+
+  document.getElementById('dw-list').innerHTML=L;
+  if(!lane) setHero(document.getElementById('dw-hero2'),b.hero2);
+  scrim.classList.add('on');drawer.classList.add('on');document.body.style.overflow='hidden';
+  drawer.scrollTop=0;
+  document.getElementById('dw-close').focus();
+}
+function closeDrawer(){scrim.classList.remove('on');drawer.classList.remove('on');document.body.style.overflow='';}
+scrim.onclick=closeDrawer;
+document.getElementById('dw-close').onclick=closeDrawer;
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+
+/* ══════════════════════════════════════════════════
+   INTERACTION — Ulta-only toggle
+   ══════════════════════════════════════════════════ */
+const bAll=document.getElementById('b-all'),bAsk=document.getElementById('b-ask');
+function setView(askOnly){
+  bAll.classList.toggle('on',!askOnly);
+  bAsk.classList.toggle('on',askOnly);
+  document.querySelectorAll('.track').forEach(t=>{
+    t.classList.toggle('dim', askOnly && !t.dataset.ask);
+  });
+  /* in collapsed view, dim the clusters that carry no Ulta dependency */
+  tl.querySelectorAll('.glane .clus').forEach(c=>{
+    c.style.opacity = (askOnly && !c.classList.contains('askc')) ? .15 : '';
+  });
+  if(askOnly) setDensity(true);          /* the ask lives at initiative level */
+}
+bAll.onclick=()=>setView(false);
+bAsk.onclick=()=>setView(true);
+
+/* ---- density: 6 group lanes (default) vs all 19 initiatives ---- */
+const bGrp=document.getElementById('b-grp'),bExp=document.getElementById('b-exp');
+function setDensity(expanded){
+  tl.classList.toggle('expanded',expanded);
+  bGrp.classList.toggle('on',!expanded);
+  bExp.classList.toggle('on',expanded);
+  scrollState();
+}
+bGrp.onclick=()=>{setDensity(false);};
+bExp.onclick=()=>{setDensity(true);};
+
+console.log('Tracks:',TRACKS.reduce((a,g)=>a+g.items.length,0),'| Ask counts:',askCount);
+</script>
+</body>
+</html>
